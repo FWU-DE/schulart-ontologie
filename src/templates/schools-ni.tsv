@@ -1,0 +1,10 @@
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
+https://w3id.org/schulart/NI_0000000	Schularten (Niedersachsen)	skos:ConceptScheme		Niedersachsen			
+https://w3id.org/schulart/NI_0000001	Grundschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Grundschule (KIM-Schulart)	Grundschulniveau (NI)	jg1,jg2,jg3,jg4
+https://w3id.org/schulart/NI_0000002	Hauptschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Hauptschule (KIM-Schulart)	Hauptschulniveau (NI),Zusätzliche Voraussetzungen für den Erwerb des mittleren Schulabschlusses (NI)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/NI_0000003	Realschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Realschule (KIM-Schulart)	Realschulniveau (NI)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/NI_0000004	Oberschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Oberschule (KIM-Schulart)	Oberschulniveau (NI)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/NI_0000005	Kooperative Gesamtschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Gesamtschule (KIM-Schulart)	Grundlegende Anforderungen (G-Kurs) (NI),Erhöhte Anforderungen (E-Kurs) (NI),Vertiefendes Niveau (NI),Zusätzliche Anforderungen (Z-Kurs) (NI),Vertiefendes Niveau (NI)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/NI_0000006	Integrierte Gesamtschule	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Gesamtschule (KIM-Schulart)	Grundlegende Anforderungen (G-Kurs) (NI),Erhöhte Anforderungen (E-Kurs) (NI),Vertiefendes Niveau (NI),Zusätzliche Anforderungen (Z-Kurs) (NI),Vertiefendes Niveau (NI)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/NI_0000007	Gymnasium	Schulart,skos:Concept	Schularten (Niedersachsen)	Niedersachsen	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (NI),Oberstufenniveau (NI)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13

@@ -1,0 +1,11 @@
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	SPLIT	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch			
+https://w3id.org/schulart/HE_0000000	Schularten (Hessen)	skos:ConceptScheme		Hessen				
+https://w3id.org/schulart/HE_0000001	Grundschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Grundschule (KIM-Schulart)		Grundschulniveau (HE)	jg1,jg2,jg3,jg4
+https://w3id.org/schulart/HE_0000002	Hauptschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Hauptschule (KIM-Schulart)		Hauptschulniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/HE_0000003	Mittelstufenschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Hauptschule (KIM-Schulart)		Hauptschulniveau (HE),Realschulniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/HE_0000004	Verbundene Haupt- und Realschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen		Hauptschule (KIM-Schulart),Realschule (KIM-Schulart)	Hauptschulniveau (HE),Realschulniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/HE_0000005	Realschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Realschule (KIM-Schulart)		Realschulniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/HE_0000006	Integrierte Gesamtschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Gesamtschule (KIM-Schulart)		Hauptschulniveau (HE),Realschulniveau (HE),Gymnasialniveau Sek I (HE),Oberstufenniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/HE_0000007	Kooperative Gesamtschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Gesamtschule (KIM-Schulart)		Hauptschulniveau (HE),Realschulniveau (HE),Gymnasialniveau Sek I (HE),Oberstufenniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/HE_0000008	Gymnasium	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Gymnasium (KIM-Schulart)		Gymnasialniveau Sek I (HE),Oberstufenniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13

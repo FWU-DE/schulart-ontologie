@@ -1,0 +1,6 @@
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
+https://w3id.org/schulart/HH_0000000	Schularten (Hamburg)	skos:ConceptScheme		Hamburg			
+https://w3id.org/schulart/HH_0000001	Grundschule	Schulart,skos:Concept	Schularten (Hamburg)	Hamburg	Grundschule (KIM-Schulart)	Grundschulniveau (HH)	jg1,jg2,jg3,jg4
+https://w3id.org/schulart/HH_0000002	Stadtteilschule	Schulart,skos:Concept	Schularten (Hamburg)	Hamburg		Mindestanforderungen (HH),Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH),Mindestanforderungen für den mittleren Schulabschluss (HH),Mindestanforderungen für den Übergang in die Studienstufe (HH),Erhöhte Anforderungen (HH),Studienstufenniveau (HH)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/HH_0000003	Gymnasium	Schulart,skos:Concept	Schularten (Hamburg)	Hamburg	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (HH),Studienstufenniveau (HH)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13

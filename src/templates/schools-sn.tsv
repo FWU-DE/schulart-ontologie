@@ -1,0 +1,9 @@
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
+https://w3id.org/schulart/SN_0000000	Schularten (Sachsen)	skos:ConceptScheme		Sachsen			
+https://w3id.org/schulart/SN_0000001	Grundschule	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen	Grundschule (KIM-Schulart)	Grundschulniveau (SN)	jg1,jg2,jg3,jg4
+https://w3id.org/schulart/SN_0000002	Gemeinschaftsschule	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen	Gemeinschaftsschule (KIM-Schulart)	Grundschulniveau (SN),Oberschulniveau (SN),Hauptschulbildungsgang (SN),Realschulbildungsgang (SN),Gymnasialniveau Sek I (SN),Gymnasialniveau Sek II (SN)	jg1,jg2,jg3,jg4,jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/SN_0000003	Oberschule	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen	Oberschule (KIM-Schulart)	Oberschulniveau (SN),Hauptschulbildungsgang (SN),Realschulbildungsgang (SN)	jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/SN_0000004	Oberschule+	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen	Oberschule (KIM-Schulart)	Grundschulniveau (SN),Oberschulniveau (SN),Hauptschulbildungsgang (SN),Realschulbildungsgang (SN)	jg1,jg2,jg3,jg4,jg5,jg6,jg7,jg8,jg9,jg10
+https://w3id.org/schulart/SN_0000005	Gymnasium	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (SN),Gymnasialniveau Sek II (SN)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/SN_0000006	Klinik- und Krankenhausschule	Schulart,skos:Concept	Schularten (Sachsen)	Sachsen			

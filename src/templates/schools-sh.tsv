@@ -1,0 +1,6 @@
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
+https://w3id.org/schulart/SH_0000000	Schularten (Schleswig-Holstein)	skos:ConceptScheme		Schleswig-Holstein			
+https://w3id.org/schulart/SH_0000001	Grundschule	Schulart,skos:Concept	Schularten (Schleswig-Holstein)	Schleswig-Holstein	Grundschule (KIM-Schulart)	Grundschulniveau (SH)	jg1,jg2,jg3,jg4
+https://w3id.org/schulart/SH_0000002	Gemeinschaftsschule	Schulart,skos:Concept	Schularten (Schleswig-Holstein)	Schleswig-Holstein	Gemeinschaftsschule (KIM-Schulart)	Sekundarstufenniveau (SH),Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH),Anforderungen für den Mittleren Schulabschluss (SH),Anforderungen für die Allgemeine Hochschulreife Sek I (SH),Anforderungen für die Allgemeine Hochschulreife Sek II (SH)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+https://w3id.org/schulart/SH_0000003	Gymnasium	Schulart,skos:Concept	Schularten (Schleswig-Holstein)	Schleswig-Holstein	Gymnasium (KIM-Schulart)	Sekundarstufenniveau (SH),Anforderungen für die Allgemeine Hochschulreife Sek I (SH),Anforderungen für die Allgemeine Hochschulreife Sek II (SH)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13

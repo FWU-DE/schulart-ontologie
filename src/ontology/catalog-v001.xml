@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <group id="odk-managed-catalog" prefer="public">
+    <uri name="https://w3id.org/schulart/sa/imports/lp_import.owl" uri="imports/lp_import.owl" />
+    <uri name="https://w3id.org/schulart/sa/imports/kim_import.owl" uri="imports/kim_import.owl" />
+    <uri name="https://w3id.org/schulart/sa/imports/skos_import.owl" uri="imports/skos_import.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/levels.owl" uri="components/levels.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-by.owl" uri="components/schools-by.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-be.owl" uri="components/schools-be.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-bb.owl" uri="components/schools-bb.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-bw.owl" uri="components/schools-bw.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-hb.owl" uri="components/schools-hb.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-he.owl" uri="components/schools-he.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-hh.owl" uri="components/schools-hh.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-mv.owl" uri="components/schools-mv.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-ni.owl" uri="components/schools-ni.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-nw.owl" uri="components/schools-nw.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-rp.owl" uri="components/schools-rp.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-sl.owl" uri="components/schools-sl.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-sn.owl" uri="components/schools-sn.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-st.owl" uri="components/schools-st.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-sh.owl" uri="components/schools-sh.owl" />
+    <uri name="https://w3id.org/schulart/sa/components/schools-th.owl" uri="components/schools-th.owl" />
+  </group>
+</catalog>

@@ -1,0 +1,100 @@
+Prefix(:=<https://w3id.org/schulart/sa/components/schools-bw.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/schulart/sa/components/schools-bw.owl>
+<https://w3id.org/schulart/sa/releases/2025-12-09/components/schools-bw.owl>
+Annotation(owl:versionInfo "2025-12-09")
+
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#Concept>))
+Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000111>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#topConceptOf>))
+Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s02>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s03>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s04>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s08>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s09>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000049>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000000>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000001>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000002>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000003>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000004>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000005>))
+Declaration(NamedIndividual(<https://w3id.org/schulart/BW_0000006>))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://w3id.org/schulart/BW_0000000> (Schularten (Baden-Württemberg))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000000> "Schularten (Baden-Württemberg)")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#ConceptScheme> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000000> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000001> (Grundschule)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000001> "Grundschule")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000001>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000001>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulart/BW_0000001> <https://w3id.org/kim/schularten/s02>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000001> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000001> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000002> (Gemeinschaftsschule)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000002> "Gemeinschaftsschule")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000002>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000002>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulart/BW_0000002> <https://w3id.org/kim/schularten/s09>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000002> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000002> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000003> (Realschule)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000003> "Realschule")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000003>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000003>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulart/BW_0000003> <https://w3id.org/kim/schularten/s04>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000003> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000003> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000004> (Hauptschule)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000004> "Hauptschule")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000004>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000004>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulart/BW_0000004> <https://w3id.org/kim/schularten/s03>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000004> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000004> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000005> (Werkrealschule)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000005> "Werkrealschule")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000005>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000005>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000005> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000005> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+# Individual: <https://w3id.org/schulart/BW_0000006> (Gymnasium)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/schulart/BW_0000006> "Gymnasium")
+ClassAssertion(<http://www.w3.org/2004/02/skos/core#Concept> <https://w3id.org/schulart/BW_0000006>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000111> <https://w3id.org/schulart/BW_0000006>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#exactMatch> <https://w3id.org/schulart/BW_0000006> <https://w3id.org/kim/schularten/s08>)
+ObjectPropertyAssertion(<http://www.w3.org/2004/02/skos/core#topConceptOf> <https://w3id.org/schulart/BW_0000006> <https://w3id.org/schulart/BW_0000000>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/schulart/BW_0000006> <https://w3id.org/lehrplan/ontology/LP_3000049>)
+
+
+)

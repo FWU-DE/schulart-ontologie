@@ -1,0 +1,3351 @@
+@prefix : <https://w3id.org/schulart/sa.ttl#> .
+@prefix dce: <http://purl.org/dc/elements/1.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ontology: <https://w3id.org/lehrplan/ontology/> .
+@base <https://w3id.org/schulart/sa.ttl> .
+
+<https://w3id.org/schulart/sa.ttl> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/schulart/sa/releases/2025-12-09/sa.ttl> ;
+                                    dcterms:description "None" ;
+                                    dcterms:license <https://creativecommons.org/licenses/unspecified> ;
+                                    dcterms:title "Schulart Ontology" ;
+                                    owl:versionInfo "2025-12-09" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty ;
+                    rdfs:label "description" .
+
+
+###  http://purl.org/dc/terms/identifier
+dcterms:identifier rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dcterms:license rdf:type owl:AnnotationProperty ;
+                rdfs:label "license" .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty ;
+              rdfs:label "title" .
+
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#closeMatch
+skos:closeMatch rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty ;
+                rdfs:label "definition"@en ;
+                skos:definition "A statement or formal explanation of the meaning of a concept."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#editorialNote
+skos:editorialNote rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowMatch
+skos:narrowMatch rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#exactMatch
+skos:exactMatch rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ,
+                         owl:TransitiveProperty ;
+                rdfs:label "has exact match"@en ;
+                skos:definition "skos:exactMatch is used to link two concepts, indicating a high degree of confidence that the concepts can be used interchangeably across a wide range of information retrieval applications. skos:exactMatch is a transitive property, and is a sub-property of skos:closeMatch."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#hasTopConcept
+skos:hasTopConcept rdf:type owl:ObjectProperty ;
+                   owl:inverseOf skos:topConceptOf ;
+                   rdfs:domain skos:ConceptScheme ;
+                   rdfs:range skos:Concept ;
+                   rdfs:label "has top concept"@en ;
+                   skos:definition "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#topConceptOf
+skos:topConceptOf rdf:type owl:ObjectProperty ;
+                  rdfs:domain skos:Concept ;
+                  rdfs:range skos:ConceptScheme ;
+                  rdfs:label "is top concept in scheme"@en ;
+                  skos:definition "Relates a concept to the concept scheme that it is a top level concept of."@en .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000026
+ontology:LP_0000026 rdf:type owl:ObjectProperty ;
+                    rdfs:range ontology:LP_0000009 ;
+                    rdfs:label "hat Jahrgangsstufe"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000029
+ontology:LP_0000029 rdf:type owl:ObjectProperty ;
+                    rdfs:label "von Bundesland"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000833
+ontology:LP_0000833 rdf:type owl:ObjectProperty ;
+                    rdfs:range ontology:LP_0000028 ;
+                    rdfs:label "hat Bildungsgangniveau"@de .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class ;
+             owl:disjointWith skos:ConceptScheme ;
+             rdfs:label "Concept"@en ;
+             skos:definition "An idea or notion; a unit of thought."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#ConceptScheme
+skos:ConceptScheme rdf:type owl:Class ;
+                   rdfs:label "Concept Scheme"@en ;
+                   skos:definition "A set of concepts, optionally including statements about semantic relationships between those concepts."@en .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000009
+ontology:LP_0000009 rdf:type owl:Class ;
+                    rdfs:comment """A \"Jahrgangsstufe\" is an \"Information Content Entity\".
+It encompasses all classes and courses in which learners progress together through a specific stage of their educational journey.
+A \"Jahrgangsstufe\" refers to a systematic grouping of learners and indicates the phase of their educational path, defining the competencies and learning content intended for them.
+Upon completion of a school year, learners transition to the next \"Jahrgangsstufe\".
+In curricula, the \"Jahrgangsstufe\" serves as an organizational element that structures teaching content in an age-appropriate manner.
+Depending on the type of school and the federal state, \"Jahrgangsstufen\" may be referred to differently (e.g., \"Klassenstufen\") or grouped together, such as in the form of double year groups."""@en ,
+                                 """Eine “Jahrgangsstufe” ist eine “Informationseinheit”.
+Sie umfasst die Gesamtheit der Klassen und Kurse, in denen Lernende gemeinsam einen bestimmten Abschnitt ihrer schulischen Laufbahn durchlaufen.
+Eine Jahrgangsstufe bezeichnet eine systematische Einteilung der Lernenden und gibt an, in welcher Phase ihres Bildungswegs sie sich befinden und legt die für sie vorgesehenen Kompetenzen und Lerninhalte fest. Nach Abschluss eines Schuljahres erfolgt der Übergang in die nächste Jahrgangsstufe.
+In den Lehrplänen dient die Jahrgangsstufe als organisatorisches Element, das den Unterrichtsinhalt altersgerecht strukturiert. Je nach Schulart und Bundesland können Jahrgangsstufen unterschiedlich benannt werden, wie zum Beispiel “Klassenstufen”, oder zusammengefasst werden, beispielsweise in Form von Doppeljahrgangsstufen."""@de ;
+                    rdfs:label "Jahrgangsstufe"@de ,
+                               "class level"@en ;
+                    rdfs:seeAlso <https://de.wikipedia.org/wiki/Jahrgangsstufe> ;
+                    skos:altLabel "Klassenstufe"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000028
+ontology:LP_0000028 rdf:type owl:Class ;
+                    rdfs:comment """Das “Bildungsgangniveau” ist ein “Niveau”, das die Anforderungen innerhalb eines “Bildungsgangs” beschreibt und dabei den Unterschied in den Leistungsniveaus zwischen verschiedenen Bildungsgängen kennzeichnet.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden. 
+In der Ontologie wird unterschieden zwischen dem “Hauptschulniveau”, dem “Realschulniveau”, dem “Gymnasialniveau Sek I” und dem “Gymnasialniveau Sek II”.
+Diese entsprechen den grundlegenden, mittleren und erweiterten Anforderungen, die in einigen Lehrplänen der Sekundarstufe I zur Kategorisierung von Kompetenzspezifikationen verwendet werden.
+Während das „Fachniveau Sek II“ die spezifischen Anforderungen in einem einzelnen Fach innerhalb des Gymnasialen Bildungsganges der Sekundarstufe II beschreibt, bezieht sich das „Bildungsgangniveau“ auf das Niveau eines gesamten Bildungsgangs, der auf einen bestimmten Abschluss abzielt."""@de ,
+                                 """The \"Bildungsgangniveau\" is a \"Niveau\" that describes the requirements within an \"Bildungsgang\" and characterizes the differences in performance levels between various educational tracks.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track.
+In the ontology, a distinction is made between \"Hauptschulniveau\", \"Realschulniveau\", \"Gymnasialniveau Sek I\", and \"Gymnasialniveau Sek II\".
+These correspond to the basic, intermediate, and advanced requirements used in some lower secondary curricula to categorize competences.
+While the \"Fachniveau Sek II\" describes the specific requirements in a single subject within the upper secondary level of the Gymnasium track, the \"Bildungsgangniveau\" refers to the level of an entire educational track aimed at a specific qualification."""@en ;
+                    rdfs:label "Bildungsgangniveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000069
+ontology:LP_0000069 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:comment """Das \"Gymnasialniveau Sek I” ist ein “Bildungsgangniveau”, welches das Niveau des \"gymnasialen Bildungsgangs\" im Sekundarbereich I beschreibt und somit meistens die Jahrgangsstufen 5-10 umfasst.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."""@de ,
+                                 """The \"Gymnasialniveau Sek I\" is a \"Bildungsgangniveau\" that describes the level of the “Gymnasialer Bildungsgang” in lower secondary education, usually covering grades 5 to 10.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."""@en ;
+                    rdfs:label "Gymnasialniveau Sek I"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000111
+ontology:LP_0000111 rdf:type owl:Class ;
+                    rdfs:comment """A \"Schulart\" is a “information content entity”.
+It is a form of school characterized by specific features that define its organizational structure, pedagogical orientation, duration of the educational stage, and the intended school-leaving qualifications.
+Depending on the education system and the federal state, it may include different names and concepts such as Grundschule, Gymnasium, Realschule, Hauptschule, Gesamtschule, vocational school (\"Berufsschule\"), or special needs school (\"Förderschule\").
+In everyday language, \"Schulart\" and \"Schulform\" are often used synonymously."""@en ,
+                                 """Eine “Schulart” ist eine “Informationseinheit”.
+Sie beschreibt eine durch bestimmte Merkmale gekennzeichnete Form der Schule, die deren organisatorische Struktur, pädagogische Ausrichtung, die Dauer des Bildungsgangabschnitts sowie die angestrebten Schulabschlüsse festlegt. Sie kann je nach Bildungssystem und Bundesland unterschiedliche Bezeichnungen und Konzepte umfassen, wie Grundschule, Gymnasium, Realschule, Hauptschule, Gesamtschule, Berufsschule oder Förderschule.
+Im allgemeinen Sprachgebrauch werden “Schulart” und \"Schulform\" synonym verwendet."""@de ;
+                    rdfs:label "Schulart"@de ,
+                               "school type"@en ,
+                               "type of school"@en ;
+                    skos:altLabel "Schulform"@de ,
+                                  "Schultyp"@de ;
+                    skos:example """Die Schulform einer Schule kann sich ändern. Deshalb werden die Schulformen als \"Kategorie\" der Funktionen einer Schule definiert. So  ist es möglich, dass einer konkreten Schule mehrere Schulformen zugeordnet werden können, und sodass jede Schulform an einen Zeitpunkt geknüpft werden kann.
+
+https://www.echo-online.de/lokales/kreis-gross-gerau/landkreis-gross-gerau/aenderung-der-schulform-war-ueberfaellig-4054079
+
+Bsp: 
+:schuleTrebur a :Schule .
+
+:schuleTreburSchulform1 a Schulartfunktion .
+:schuleTreburSchulform1 bfo:existsAt :someTimeIntervalUntilDateX .
+:schuleTreburSchulform1 :konkretisiertSchulform :Realschule .
+
+:schuleTreburSchulform2 a Schulartfunktion .
+:schuleTreburSchulform2 bfo:existsAt :someTimeIntervalUntilDateX .
+:schuleTreburSchulform2 :konkretisiertSchulform :Hauptschule .
+
+:schuleTreburSchulform3 a Schulartfunktion .
+:schuleTreburSchulform3 :konkretisiertSchulform :Gesamtschule 
+:schuleTreburSchulform3 bfo:existsAt :someTimeIntervalFromDateY .
+
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform1 .
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform2 .
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform3 .
+
+:someTimeIntervalUntilDateX  bfo:precedes :someTimeIntervalUntilDateY .""" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000572
+ontology:LP_0000572 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:comment "Ein Lehrplanelement von Berlin mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe."@de ,
+                                 "Ein Lehrplanelement von Berlin/Brandenburg mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe."@de ;
+                    rdfs:label "Bildungsgangniveau (BE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000573
+ontology:LP_0000573 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000572 ;
+                    rdfs:comment "Abschluss Niveau, das zum berufsorientierenden Abschluss befähigt."@de ;
+                    rdfs:label "BOA Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000574
+ontology:LP_0000574 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000572 ,
+                                    [ owl:intersectionOf ( ontology:LP_0000834
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty ontology:LP_0000029 ;
+                                                             owl:hasValue ontology:LP_3000048
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    rdfs:comment "Abschluss Niveau, das zur Berufsbildungsreife befähigt."@de ;
+                    rdfs:label "BBR Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000575
+ontology:LP_0000575 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000572 ,
+                                    [ owl:intersectionOf ( ontology:LP_0000834
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty ontology:LP_0000029 ;
+                                                             owl:hasValue ontology:LP_3000048
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    rdfs:comment "Abschluss Niveau, dass zur erweiterten Berufsbildungsreife befähigt"@de ;
+                    rdfs:label "EBBR Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000576
+ontology:LP_0000576 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000572 ,
+                                    [ owl:intersectionOf ( ontology:LP_0000832
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty ontology:LP_0000029 ;
+                                                             owl:hasValue ontology:LP_3000048
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    rdfs:comment "Abschluss Niveau, das zum mittlereren Schulabschluss befähigt."@de ;
+                    rdfs:label "MSA Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000577
+ontology:LP_0000577 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000572 ,
+                                    [ owl:intersectionOf ( ontology:LP_0000069
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty ontology:LP_0000029 ;
+                                                             owl:hasValue ontology:LP_3000048
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                    rdfs:comment "Abschluss Niveau, das zum Übergang in die 2-jährige Qualifikationsphase (Abitur) befähigt."@de ;
+                    rdfs:label "Gymnasialniveau Sek I (BE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000832
+ontology:LP_0000832 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:comment """Das “Realschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des
+\"Realschulbildungsgangs\" beschreibt. 
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."""@de ,
+                                 """The \"Realschulniveau\" is a \"Bildungsgangniveau\" that describes the level of the “Realschulbildungsgang”.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."""@en ;
+                    rdfs:label "Realschulniveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000834
+ontology:LP_0000834 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:comment """Das “Hauptschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des \"Hauptschulbildungsgangs\" beschreibt. 
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."""@de ,
+                                 """The \"Hauptschulniveau\" is a \"Bildungsgangniveau\" that describes the level of the “Hauptschulbildungsgang”.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."""@en ;
+                    rdfs:label "Hauptschulniveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000835
+ontology:LP_0000835 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:comment """Das “Gymnasialniveau Sek II” ist ein “Bildungsgangniveau”, welches das Niveau des \"gymnasialen Bildungsgangs\" im Sekundarbereich II beschreibt und somit meistens die Jahrgangsstufen 11-13 umfasst.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."""@de ,
+                                 """The \"Gymnasialniveau Sek II\" is a \"Bildungsgangniveau\" that describes the level of the “Gymnasialer Bildungsgangs” in upper secondary education, usually covering grades 11 to 13.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track.""" ;
+                    rdfs:label "Gymnasialniveau Sek II"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001011
+ontology:LP_0001011 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001019
+ontology:LP_0001019 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001028
+ontology:LP_0001028 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (SL)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001032
+ontology:LP_0001032 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (SN)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001035
+ontology:LP_0001035 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (ST)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001038
+ontology:LP_0001038 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (TH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001101
+ontology:LP_0001101 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001105
+ontology:LP_0001105 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (HB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0001108
+ontology:LP_0001108 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (HH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030039
+ontology:LP_0030039 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030041
+ontology:LP_0030041 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030053
+ontology:LP_0030053 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030080
+ontology:LP_0030080 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030091
+ontology:LP_0030091 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030361
+ontology:LP_0030361 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Grundschulniveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030366
+ontology:LP_0030366 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000028 ;
+                    rdfs:label "Bildungsgangniveau (BB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030378
+ontology:LP_0030378 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000834 ;
+                    rdfs:label "EBR Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030379
+ontology:LP_0030379 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000832 ;
+                    rdfs:label "FOR Niveau"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030380
+ontology:LP_0030380 rdf:type owl:Class ;
+                    rdfs:subClassOf ontology:LP_0000069 ;
+                    rdfs:label "FOR-Q Niveau"@de .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/kim/schularten/s02
+<https://w3id.org/kim/schularten/s02> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Grundschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_1> ,
+                                                      <https://w3id.org/kim/isced-1997/level1> ,
+                                                      <https://w3id.org/kim/isced-2011/level1> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/1> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/2> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/3> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/4> ;
+                                      skos:prefLabel "Grundschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s03
+<https://w3id.org/kim/schularten/s03> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Hauptschule (KIM-Schulart)" ;
+                                      skos:altLabel "Mittelschule"@de ,
+                                                    "Mittelstufenschule"@de ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
+                                                      <https://w3id.org/kim/isced-1997/level2> ,
+                                                      <https://w3id.org/kim/isced-2011/level2> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      skos:prefLabel "Hauptschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s04
+<https://w3id.org/kim/schularten/s04> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Realschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
+                                                      <https://w3id.org/kim/isced-1997/level2> ,
+                                                      <https://w3id.org/kim/isced-2011/level2> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      skos:prefLabel "Realschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s05
+<https://w3id.org/kim/schularten/s05> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Gesamtschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
+                                                      <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level2> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level2> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/11> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/12> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/13> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      skos:prefLabel "Gesamtschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s06
+<https://w3id.org/kim/schularten/s06> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Förderschule (KIM-Schulart)" ;
+                                      skos:prefLabel "Förderschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s07
+<https://w3id.org/kim/schularten/s07> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Oberschule (KIM-Schulart)" ;
+                                      skos:prefLabel "Oberschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s08
+<https://w3id.org/kim/schularten/s08> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Gymnasium (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
+                                                      <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level2> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level2> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/11> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/12> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/13> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      skos:prefLabel "Gymnasium"@de .
+
+
+###  https://w3id.org/kim/schularten/s09
+<https://w3id.org/kim/schularten/s09> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Gemeinschaftsschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:prefLabel "Gemeinschaftsschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s10
+<https://w3id.org/kim/schularten/s10> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Sekundarschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
+                                                      <https://w3id.org/kim/isced-1997/level2> ,
+                                                      <https://w3id.org/kim/isced-2011/level2> ;
+                                      skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
+                                                       <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      skos:prefLabel "Sekundarschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s11
+<https://w3id.org/kim/schularten/s11> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Berufsfachschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:prefLabel "Berufsfachschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s12
+<https://w3id.org/kim/schularten/s12> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Berufsschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:prefLabel "Berufsschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s13
+<https://w3id.org/kim/schularten/s13> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Fachoberschule (KIM-Schulart)" ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:prefLabel "Fachoberschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s14
+<https://w3id.org/kim/schularten/s14> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Berufliches Gymnasium (KIM-Schulart)" ;
+                                      skos:altLabel "Fachgymnasium"@de ;
+                                      skos:closeMatch <http://w3id.org/kim/educationalLevel/level_3> ,
+                                                      <https://w3id.org/kim/isced-1997/level3> ,
+                                                      <https://w3id.org/kim/isced-2011/level3> ;
+                                      skos:prefLabel "Berufliches Gymnasium"@de .
+
+
+###  https://w3id.org/kim/schularten/s15
+<https://w3id.org/kim/schularten/s15> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Privat- und Ersatzschule (KIM-Schulart)" ;
+                                      skos:altLabel "Ersatzschule"@de ,
+                                                    "Freie Schule"@de ,
+                                                    "Privatschule"@de ;
+                                      skos:prefLabel "Privat- und Ersatzschule"@de .
+
+
+###  https://w3id.org/kim/schularten/s16
+<https://w3id.org/kim/schularten/s16> rdf:type owl:NamedIndividual ;
+                                      rdfs:label "Abendgymnasium (KIM-Schulart)" ;
+                                      skos:altLabel "Kolleg"@de ;
+                                      skos:prefLabel "Abendgymnasium"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000014
+ontology:LP_0000014 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "E Niveau (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000016
+ontology:LP_0000016 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "G Niveau (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000018
+ontology:LP_0000018 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "Gymnasialniveau Sek I (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000022
+ontology:LP_0000022 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "M Niveau (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000023
+ontology:LP_0000023 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030053 ;
+                    rdfs:label "Gymnasialniveau Sek I (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000025
+ontology:LP_0000025 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030053 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Mittelschulniveau (BY)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000027
+ontology:LP_0000027 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030053 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Mittlere-Reife-Klasse (BY)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000030
+ontology:LP_0000030 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030053 ;
+                    rdfs:label "Realschulniveau (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000031
+ontology:LP_0000031 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030053 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "Regelklasse (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000034
+ontology:LP_0000034 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001105 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:comment "Bezeichnet das Niveau, das an Gesamt-, Regel-, Sekundar-, u.ä. Schulen sowie Gymnasien bzgl. der Klassenstufen kleiner 11 gilt und das einem gymnasialen Bildungsgang entspricht. D.h. die Schülerinnen und Schüler verfolgen einen Bildungsgang, der zum Abitur führt, sind aber noch nicht in der gymnasialen Oberstufe (Klassenstufe 11/12/13)." ;
+                    rdfs:label "Erweitertes Anforderungsniveau (HB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000035
+ontology:LP_0000035 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001105 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Grundlegendes Anforderungsniveau (HB)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000038
+ontology:LP_0000038 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001105 ;
+                    rdfs:label "Gymnasialniveau Sek I (HB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000044
+ontology:LP_0000044 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001105 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Oberschulniveau (HB)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000090
+ontology:LP_0000090 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030039 ;
+                    rdfs:label "Gymnasialniveau Sek I (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000091
+ontology:LP_0000091 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030039 ;
+                    rdfs:label "Hauptschulniveau (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000092
+ontology:LP_0000092 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030039 ;
+                    rdfs:label "Realschulniveau (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000093
+ontology:LP_0000093 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001108 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Erhöhte Anforderungen (HH)"@de ;
+                    skos:editorialNote "gilt nur für die Jahrgangstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000094
+ontology:LP_0000094 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001108 ;
+                    rdfs:label "Gymnasialniveau Sek I (HH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000095
+ontology:LP_0000095 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001108 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Mindestanforderungen (HH)"@de ;
+                    skos:editorialNote "gilt nur für die Jahrgangstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000096
+ontology:LP_0000096 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001108 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-9" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000097
+ontology:LP_0000097 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001108 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Mindestanforderungen für den mittleren Schulabschluss (HH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000098
+ontology:LP_0000098 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001108 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ,
+                                        ontology:LP_2000011 ;
+                    rdfs:label "Mindestanforderungen für den Übergang in die Studienstufe (HH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 9-11" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000099
+ontology:LP_0000099 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001011 ;
+                    rdfs:label "Gymnasialniveau Sek I (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000100
+ontology:LP_0000100 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001011 ;
+                    rdfs:label "Bildungsgangniveau Berufsreife (MV)"@de ;
+                    skos:altLabel "KMK Bildungsstandards für den ersten Schulabschluss (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000101
+ontology:LP_0000101 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001011 ;
+                    rdfs:label "Bildungsgangniveau Mittlere Reife (MV)"@de ;
+                    skos:altLabel "KMK Bildungsstandards für den mittleren Schulabschluss (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000102
+ontology:LP_0000102 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001011 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Orientierungsstufeniveau (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000103
+ontology:LP_0000103 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Erhöhte Anforderungen (E-Kurs) (NI)"@de ;
+                    skos:editorialNote "für die Gesamtschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000104
+ontology:LP_0000104 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Grundlegende Anforderungen (G-Kurs) (NI)"@de ;
+                    skos:editorialNote "für die Gesamtschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000107
+ontology:LP_0000107 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Gymnasialniveau Sek I (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000108
+ontology:LP_0000108 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Hauptschulniveau (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000110
+ontology:LP_0000110 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Oberschulniveau (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000116
+ontology:LP_0000116 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Realschulniveau (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000117
+ontology:LP_0000117 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Vertiefendes Niveau (NI)"@de ;
+                    skos:editorialNote "für die Gesamtschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000118
+ontology:LP_0000118 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Zusätzliche Anforderungen (Z-Kurs) (NI)"@de ;
+                    skos:editorialNote "für die Gesamtschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000129
+ontology:LP_0000129 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Zusätzliche Voraussetzungen für den Erwerb des Mittleres Schulabschlusses (NI)"@de ;
+                    skos:editorialNote "für die Hauptschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000130
+ontology:LP_0000130 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Erweiterungskurs (NW)"@de ;
+                    skos:editorialNote "für Gesamt- und Sekundarschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000131
+ontology:LP_0000131 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Gesamt-/Sekundarschulniveau (NW)"@de ;
+                    skos:editorialNote "Basisniveau für die Gesamtschule und die Sekundarschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000132
+ontology:LP_0000132 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Gymnasialniveau Sek I (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000134
+ontology:LP_0000134 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Hauptschulniveau (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000138
+ontology:LP_0000138 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Niveau Mittlerer Schulabschluss (NW)"@de ;
+                    skos:editorialNote "für Hauptschule" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000142
+ontology:LP_0000142 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Realschulniveau (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000143
+ontology:LP_0000143 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001019 ;
+                    rdfs:label "Erhöhtes Kompetenzniveau (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000147
+ontology:LP_0000147 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001019 ;
+                    rdfs:label "Grundlegendes Kompetenzniveau (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000151
+ontology:LP_0000151 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001019 ;
+                    rdfs:label "Mittleres Kompetenzniveau (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000193
+ontology:LP_0000193 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030091 ;
+                    rdfs:label "Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000216
+ontology:LP_0000216 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0030091 ;
+                    rdfs:label "Anforderungen für den Mittleren Schulabschluss (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000236
+ontology:LP_0000236 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0030091 ;
+                    rdfs:label "Anforderungen für die Allgemeine Hochschulreife Sek I (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000249
+ontology:LP_0000249 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0030091 ;
+                    rdfs:label "Sekundarstufenniveau (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000260
+ontology:LP_0000260 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001028 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:comment "gilt für die Jahrgangsstufen 9-10" ;
+                    rdfs:label "A Kurs (SL)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000264
+ontology:LP_0000264 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001028 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "E Kurs (SL)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000266
+ontology:LP_0000266 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001028 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "G Kurs (SL)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000267
+ontology:LP_0000267 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001028 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Gemeinschaftschulniveau (SL)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000269
+ontology:LP_0000269 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001028 ;
+                    rdfs:label "Gymnasialniveau Sek I (SL)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000279
+ontology:LP_0000279 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001032 ;
+                    rdfs:label "Gymnasialniveau Sek I (SN)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000293
+ontology:LP_0000293 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001032 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "Hauptschulbildungsgangniveau (SN)"@de ;
+                    skos:editorialNote """Achtung hier ist das Niveau gemeint, nicht der Bildungsgang.
+
+gilt für die Jahrgangsstufen 7-9""" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000294
+ontology:LP_0000294 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001032 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Oberschulniveau (SN)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000295
+ontology:LP_0000295 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001032 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Realschulbildungsgangniveau (SN)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000296
+ontology:LP_0000296 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001035 ;
+                    rdfs:label "Gymnasialniveau Sek I (ST)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000297
+ontology:LP_0000297 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001035 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "Hauptschulabschlussbezogener Unterricht (ST)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-9" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000298
+ontology:LP_0000298 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001035 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Realschulabschlussbezogener Unterricht (ST)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 7-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000299
+ontology:LP_0000299 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001035 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Sekundarschulniveau (ST)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-6" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000309
+ontology:LP_0000309 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001038 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ;
+                    rdfs:label "Regelschulniveau (TH)"@de ;
+                    skos:altLabel "Niveau für den Erwerb des Hauptschul- und des Realschulabschlusses (TH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 5-8" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000310
+ontology:LP_0000310 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000834 ,
+                             ontology:LP_0001038 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Hauptschulabschlussbezogener Kurs (TH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 9-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000311
+ontology:LP_0000311 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000832 ,
+                             ontology:LP_0001038 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "Realschulabschlussbezogener Kurs (TH)"@de ;
+                    skos:editorialNote "gilt für die Jahrgangsstufen 9-10" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000583
+ontology:LP_0000583 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000573 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ;
+                    rdfs:label "BOA A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000584
+ontology:LP_0000584 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000573 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "BOA B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000585
+ontology:LP_0000585 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000573 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "BOA C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000586
+ontology:LP_0000586 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000573 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "BOA D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000587
+ontology:LP_0000587 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000573 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "BOA E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000588
+ontology:LP_0000588 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "BBR A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000589
+ontology:LP_0000589 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "BBR B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000590
+ontology:LP_0000590 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ;
+                    rdfs:label "BBR C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000591
+ontology:LP_0000591 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "BBR D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000592
+ontology:LP_0000592 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "BBR E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000593
+ontology:LP_0000593 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000574 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "BBR F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000594
+ontology:LP_0000594 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "EBBR A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000595
+ontology:LP_0000595 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "EBBR B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000596
+ontology:LP_0000596 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ;
+                    rdfs:label "EBBR C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000597
+ontology:LP_0000597 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "EBBR D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000598
+ontology:LP_0000598 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ;
+                    rdfs:label "EBBR E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000599
+ontology:LP_0000599 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ;
+                    ontology:LP_0000026 ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "EBBR F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000600
+ontology:LP_0000600 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000575 ;
+                    ontology:LP_0000026 ontology:LP_2000010 ;
+                    rdfs:label "EBBR G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000601
+ontology:LP_0000601 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "MSA A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000602
+ontology:LP_0000602 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ;
+                    rdfs:label "MSA B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000603
+ontology:LP_0000603 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ;
+                    rdfs:label "MSA C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000604
+ontology:LP_0000604 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "MSA D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000605
+ontology:LP_0000605 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ;
+                    rdfs:label "MSA E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000606
+ontology:LP_0000606 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ;
+                    ontology:LP_0000026 ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "MSA F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000607
+ontology:LP_0000607 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000576 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "MSA G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000608
+ontology:LP_0000608 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "Gymnasialniveau Sek I A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000609
+ontology:LP_0000609 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ;
+                    rdfs:label "Gymnasialniveau Sek I B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000610
+ontology:LP_0000610 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ;
+                    rdfs:label "Gymnasialniveau Sek I C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000611
+ontology:LP_0000611 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "Gymnasialniveau Sek I D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000612
+ontology:LP_0000612 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ,
+                             ontology:LP_0030361 ;
+                    ontology:LP_0000026 ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "Gymnasialniveau Sek I E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000613
+ontology:LP_0000613 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ;
+                    ontology:LP_0000026 ontology:LP_2000008 ;
+                    rdfs:label "Gymnasialniveau Sek I F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000614
+ontology:LP_0000614 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ;
+                    rdfs:label "Gymnasialniveau Sek I G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0000615
+ontology:LP_0000615 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000577 ;
+                    ontology:LP_0000026 ontology:LP_2000010 ;
+                    rdfs:label "Gymnasialniveau Sek I H"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030345
+ontology:LP_0030345 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "Gymnasialniveau Sek II (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030346
+ontology:LP_0030346 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030053 ;
+                    rdfs:label "Gymnasialniveau Sek II (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030347
+ontology:LP_0030347 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001105 ;
+                    rdfs:label "Oberstufenniveau (HB)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (HB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030348
+ontology:LP_0030348 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030039 ;
+                    rdfs:label "Oberstufenniveau (HE)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030349
+ontology:LP_0030349 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001108 ;
+                    rdfs:label "Studienstufenniveau (HH)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (HH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030350
+ontology:LP_0030350 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001011 ;
+                    rdfs:label "Gymnasialniveau Sek II (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030351
+ontology:LP_0030351 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030041 ;
+                    rdfs:label "Gymnasialniveau Sek II (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030352
+ontology:LP_0030352 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030080 ;
+                    rdfs:label "Oberstufenniveau (NI)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030353
+ontology:LP_0030353 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001019 ;
+                    rdfs:label "Niveau Sekundarstufe II (RP)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030354
+ontology:LP_0030354 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030091 ;
+                    rdfs:label "Anforderungen für die Allgemeine Hochschulreife Sek II (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030355
+ontology:LP_0030355 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001028 ;
+                    rdfs:label "Oberstufenniveau (SL)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (SL)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030356
+ontology:LP_0030356 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001032 ;
+                    rdfs:label "Gymnasialniveau Sek II (SN)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030357
+ontology:LP_0030357 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001035 ;
+                    rdfs:label "Gymnasialniveau Sek II (ST)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030358
+ontology:LP_0030358 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001038 ;
+                    rdfs:label "Gymnasialniveau Sek II (TH)"@de ;
+                    skos:altLabel "Niveau für den Erwerb der allgemeinen Hochschulreife Sek II (TH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030359
+ontology:LP_0030359 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000069 ,
+                             ontology:LP_0001038 ;
+                    rdfs:label "Gymnasialniveau Sek I (TH)"@de ;
+                    skos:altLabel "Niveau für den Erwerb der allgemeinen Hochschulreife Sek I (TH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030360
+ontology:LP_0030360 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0001101 ;
+                    rdfs:label "Oberstufenniveau (BW)"@de ;
+                    skos:editorialNote "an Gemeinschaftsschulen" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030362
+ontology:LP_0030362 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001101 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (BW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030363
+ontology:LP_0030363 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030053 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (BY)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030364
+ontology:LP_0030364 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001105 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (HB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030365
+ontology:LP_0030365 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030039 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (HE)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030367
+ontology:LP_0030367 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001108 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (HH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030368
+ontology:LP_0030368 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001011 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (MV)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030369
+ontology:LP_0030369 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030080 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (NI)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030370
+ontology:LP_0030370 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030041 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (NW)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030371
+ontology:LP_0030371 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001019 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (RP)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030372
+ontology:LP_0030372 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030091 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (SH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030373
+ontology:LP_0030373 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001028 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (SL)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030374
+ontology:LP_0030374 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001032 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (SN)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030375
+ontology:LP_0030375 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001035 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (ST)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030376
+ontology:LP_0030376 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0001038 ,
+                             ontology:LP_0030361 ;
+                    rdfs:label "Grundschulniveau (TH)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030377
+ontology:LP_0030377 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000572 ,
+                             ontology:LP_0000835 ;
+                    rdfs:label "Oberstufenniveau (BE)"@de ;
+                    skos:altLabel "Gymnasialniveau Sek II (BE)" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030381
+ontology:LP_0030381 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "FOR-Q A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030382
+ontology:LP_0030382 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "FOR-Q B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030383
+ontology:LP_0030383 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ;
+                    rdfs:label "FOR-Q C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030384
+ontology:LP_0030384 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ;
+                    rdfs:label "FOR-Q D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030385
+ontology:LP_0030385 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ;
+                    rdfs:label "FOR-Q E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030386
+ontology:LP_0030386 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "FOR-Q F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030387
+ontology:LP_0030387 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "FOR-Q G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030388
+ontology:LP_0030388 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030380 ;
+                    ontology:LP_0000026 ontology:LP_2000010 ;
+                    rdfs:label "FOR-Q H"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030389
+ontology:LP_0030389 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "FOR A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030390
+ontology:LP_0030390 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "FOR B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030391
+ontology:LP_0030391 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ;
+                    rdfs:label "FOR C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030392
+ontology:LP_0030392 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "FOR D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030393
+ontology:LP_0030393 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ;
+                    rdfs:label "FOR E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030394
+ontology:LP_0030394 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ;
+                    rdfs:label "FOR F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030395
+ontology:LP_0030395 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030379 ;
+                    ontology:LP_0000026 ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "FOR G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030396
+ontology:LP_0030396 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ;
+                    rdfs:label "EBR A"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030397
+ontology:LP_0030397 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000001 ,
+                                        ontology:LP_2000002 ,
+                                        ontology:LP_2000003 ;
+                    rdfs:label "EBR B"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030398
+ontology:LP_0030398 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000003 ,
+                                        ontology:LP_2000004 ,
+                                        ontology:LP_2000005 ;
+                    rdfs:label "EBR C"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030399
+ontology:LP_0030399 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030361 ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000005 ,
+                                        ontology:LP_2000006 ,
+                                        ontology:LP_2000007 ;
+                    rdfs:label "EBR D"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030400
+ontology:LP_0030400 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000007 ,
+                                        ontology:LP_2000008 ;
+                    rdfs:label "EBR E"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030401
+ontology:LP_0030401 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000008 ,
+                                        ontology:LP_2000009 ,
+                                        ontology:LP_2000010 ;
+                    rdfs:label "EBR F"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030402
+ontology:LP_0030402 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0030378 ;
+                    ontology:LP_0000026 ontology:LP_2000010 ;
+                    rdfs:label "EBR G"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_0030403
+ontology:LP_0030403 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000835 ,
+                             ontology:LP_0030366 ;
+                    rdfs:label "Oberstufenniveau (BB)"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000001
+ontology:LP_2000001 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 1 ;
+                    rdfs:label "Jahrgangsstufe 1"@de ,
+                               "class level 1"@en ,
+                               "jg1" ;
+                    skos:altLabel "1.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000002
+ontology:LP_2000002 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 2 ;
+                    rdfs:label "Jahrgangsstufe 2"@de ,
+                               "class level 2"@en ,
+                               "jg2" ;
+                    skos:altLabel "2.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000003
+ontology:LP_2000003 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 3 ;
+                    rdfs:label "Jahrgangsstufe 3"@de ,
+                               "class level 3"@en ,
+                               "jg3" ;
+                    skos:altLabel "3.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000004
+ontology:LP_2000004 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 4 ;
+                    rdfs:label "Jahrgangsstufe 4"@de ,
+                               "class level 4"@en ,
+                               "jg4" ;
+                    skos:altLabel "4.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000005
+ontology:LP_2000005 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 5 ;
+                    rdfs:label "Jahrgangsstufe 5"@de ,
+                               "class level 5"@en ,
+                               "jg5" ;
+                    skos:altLabel "5.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000006
+ontology:LP_2000006 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 6 ;
+                    rdfs:label "Jahrgangsstufe 6"@de ,
+                               "class level 6"@en ,
+                               "jg6" ;
+                    skos:altLabel "6.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000007
+ontology:LP_2000007 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 7 ;
+                    rdfs:label "Jahrgangsstufe 7"@de ,
+                               "class level 7"@en ,
+                               "jg7" ;
+                    skos:altLabel "7.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000008
+ontology:LP_2000008 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 8 ;
+                    rdfs:label "Jahrgangsstufe 8"@de ,
+                               "class level 8"@en ,
+                               "jg8" ;
+                    skos:altLabel "8.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000009
+ontology:LP_2000009 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 9 ;
+                    rdfs:label "Jahrgangsstufe 9"@de ,
+                               "class level 9"@en ,
+                               "jg9" ;
+                    skos:altLabel "9.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000010
+ontology:LP_2000010 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 10 ;
+                    rdfs:label "Jahrgangsstufe 10"@de ,
+                               "class level 10"@en ,
+                               "jg10" ;
+                    skos:altLabel "10.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000011
+ontology:LP_2000011 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 11 ;
+                    rdfs:label "Jahrgangsstufe 11"@de ,
+                               "class level 11"@en ,
+                               "jg11" ;
+                    skos:altLabel "11.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000012
+ontology:LP_2000012 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 12 ;
+                    rdfs:label "Jahrgangsstufe 12"@de ,
+                               "class level 12"@en ,
+                               "jg12" ;
+                    skos:altLabel "12.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_2000013
+ontology:LP_2000013 rdf:type owl:NamedIndividual ,
+                             ontology:LP_0000009 ;
+                    dcterms:identifier 13 ;
+                    rdfs:label "Jahrgangsstufe 13"@de ,
+                               "class level 13"@en ,
+                               "jg13" ;
+                    skos:altLabel "13.Klasse"@de .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000031
+ontology:LP_3000031 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Thüringen"@de ;
+                    skos:altLabel "TH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000043
+ontology:LP_3000043 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Niedersachsen"@de ;
+                    skos:altLabel "NI" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000044
+ontology:LP_3000044 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Nordrhein-Westfalen"@de ;
+                    skos:altLabel "NW" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000045
+ontology:LP_3000045 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Hamburg"@de ;
+                    skos:altLabel "HH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000046
+ontology:LP_3000046 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Rheinland-Pfalz"@de ;
+                    skos:altLabel "RP" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000047
+ontology:LP_3000047 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Sachsen"@de ;
+                    skos:altLabel "SN" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000048
+ontology:LP_3000048 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Berlin"@de ;
+                    skos:altLabel "BE" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000049
+ontology:LP_3000049 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Baden-Württemberg"@de ;
+                    skos:altLabel "BW" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000050
+ontology:LP_3000050 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Hessen"@de ;
+                    skos:altLabel "HE" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000051
+ontology:LP_3000051 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Bayern"@de ;
+                    skos:altLabel "BY" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000052
+ontology:LP_3000052 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Mecklenburg-Vorpommern"@de ;
+                    skos:altLabel "MV" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000053
+ontology:LP_3000053 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Sachsen-Anhalt"@de ;
+                    skos:altLabel "ST" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000054
+ontology:LP_3000054 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Schleswig-Holstein"@de ;
+                    skos:altLabel "SH" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000055
+ontology:LP_3000055 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Saarland"@de ;
+                    skos:altLabel "SL" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000056
+ontology:LP_3000056 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Bremen"@de ;
+                    skos:altLabel "HB" .
+
+
+###  https://w3id.org/lehrplan/ontology/LP_3000057
+ontology:LP_3000057 rdf:type owl:NamedIndividual ;
+                    rdfs:label "Brandenburg"@de ;
+                    skos:altLabel "BB" .
+
+
+###  https://w3id.org/schulart/BB_0000000
+<https://w3id.org/schulart/BB_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000057 ;
+                                       rdfs:label "Schularten (Brandenburg)" .
+
+
+###  https://w3id.org/schulart/BB_0000001
+<https://w3id.org/schulart/BB_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000057 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/BB_0000002
+<https://w3id.org/schulart/BB_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s07> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000057 ;
+                                       rdfs:label "Oberschule" .
+
+
+###  https://w3id.org/schulart/BB_0000003
+<https://w3id.org/schulart/BB_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000057 ;
+                                       rdfs:label "Gesamtschule" .
+
+
+###  https://w3id.org/schulart/BB_0000004
+<https://w3id.org/schulart/BB_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000057 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/BE_0000000
+<https://w3id.org/schulart/BE_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000048 ;
+                                       rdfs:label "Schularten (Berlin)" .
+
+
+###  https://w3id.org/schulart/BE_0000001
+<https://w3id.org/schulart/BE_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000048 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/BE_0000002
+<https://w3id.org/schulart/BE_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000048 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/BE_0000003
+<https://w3id.org/schulart/BE_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s10> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000048 ;
+                                       rdfs:label "Integrierte Sekundarschule" .
+
+
+###  https://w3id.org/schulart/BE_0000004
+<https://w3id.org/schulart/BE_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000048 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/BW_0000000
+<https://w3id.org/schulart/BW_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Schularten (Baden-Württemberg)" .
+
+
+###  https://w3id.org/schulart/BW_0000001
+<https://w3id.org/schulart/BW_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/BW_0000002
+<https://w3id.org/schulart/BW_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/BW_0000003
+<https://w3id.org/schulart/BW_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Realschule" .
+
+
+###  https://w3id.org/schulart/BW_0000004
+<https://w3id.org/schulart/BW_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Hauptschule" .
+
+
+###  https://w3id.org/schulart/BW_0000005
+<https://w3id.org/schulart/BW_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Werkrealschule" .
+
+
+###  https://w3id.org/schulart/BW_0000006
+<https://w3id.org/schulart/BW_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BW_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000049 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/BY_0000000
+<https://w3id.org/schulart/BY_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Schularten (Bayern)" .
+
+
+###  https://w3id.org/schulart/BY_0000001
+<https://w3id.org/schulart/BY_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000001 ,
+                                                           ontology:LP_2000002 ,
+                                                           ontology:LP_2000003 ,
+                                                           ontology:LP_2000004 ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       ontology:LP_0000833 ontology:LP_0030363 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/BY_0000002
+<https://w3id.org/schulart/BY_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       ontology:LP_0000833 ontology:LP_0000025 ,
+                                                           ontology:LP_0000027 ,
+                                                           ontology:LP_0000031 ;
+                                       rdfs:label "Mittelschule" .
+
+
+###  https://w3id.org/schulart/BY_0000003
+<https://w3id.org/schulart/BY_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       ontology:LP_0000833 ontology:LP_0000030 ;
+                                       rdfs:label "Wirtschaftsschule" .
+
+
+###  https://w3id.org/schulart/BY_0000004
+<https://w3id.org/schulart/BY_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       ontology:LP_0000833 ontology:LP_0000030 ;
+                                       rdfs:label "Realschule" .
+
+
+###  https://w3id.org/schulart/BY_0000005
+<https://w3id.org/schulart/BY_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       ontology:LP_0000833 ontology:LP_0000023 ,
+                                                           ontology:LP_0030346 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/BY_0000006
+<https://w3id.org/schulart/BY_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s13> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Fachoberschule" .
+
+
+###  https://w3id.org/schulart/BY_0000007
+<https://w3id.org/schulart/BY_0000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Berufsoberschule" .
+
+
+###  https://w3id.org/schulart/BY_0000008
+<https://w3id.org/schulart/BY_0000008> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s11> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Berufsfachschule" .
+
+
+###  https://w3id.org/schulart/BY_0000009
+<https://w3id.org/schulart/BY_0000009> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s12> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Berufsschule" .
+
+
+###  https://w3id.org/schulart/BY_0000010
+<https://w3id.org/schulart/BY_0000010> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Fachakademie" .
+
+
+###  https://w3id.org/schulart/BY_0000011
+<https://w3id.org/schulart/BY_0000011> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Fachschule" .
+
+
+###  https://w3id.org/schulart/BY_0000012
+<https://w3id.org/schulart/BY_0000012> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s06> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/BY_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000051 ;
+                                       rdfs:label "Förderschule" .
+
+
+###  https://w3id.org/schulart/HB_0000000
+<https://w3id.org/schulart/HB_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Schularten (Bremen)" .
+
+
+###  https://w3id.org/schulart/HB_0000001
+<https://w3id.org/schulart/HB_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/HB_0000002
+<https://w3id.org/schulart/HB_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Werkschule" .
+
+
+###  https://w3id.org/schulart/HB_0000003
+<https://w3id.org/schulart/HB_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s07> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Oberschule" .
+
+
+###  https://w3id.org/schulart/HB_0000004
+<https://w3id.org/schulart/HB_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HB_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000056 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/HE_0000000
+<https://w3id.org/schulart/HE_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Schularten (Hessen)" .
+
+
+###  https://w3id.org/schulart/HE_0000001
+<https://w3id.org/schulart/HE_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/HE_0000002
+<https://w3id.org/schulart/HE_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Hauptschule" .
+
+
+###  https://w3id.org/schulart/HE_0000003
+<https://w3id.org/schulart/HE_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Mittelstufenschule" .
+
+
+###  https://w3id.org/schulart/HE_0000004
+<https://w3id.org/schulart/HE_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Verbundene Haupt- und Realschule" .
+
+
+###  https://w3id.org/schulart/HE_0000005
+<https://w3id.org/schulart/HE_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Realschule" .
+
+
+###  https://w3id.org/schulart/HE_0000006
+<https://w3id.org/schulart/HE_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/HE_0000007
+<https://w3id.org/schulart/HE_0000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Kooperative Gesamtschule" .
+
+
+###  https://w3id.org/schulart/HE_0000008
+<https://w3id.org/schulart/HE_0000008> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/HH_0000000
+<https://w3id.org/schulart/HH_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000045 ;
+                                       rdfs:label "Schularten (Hamburg)" .
+
+
+###  https://w3id.org/schulart/HH_0000001
+<https://w3id.org/schulart/HH_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000045 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/HH_0000002
+<https://w3id.org/schulart/HH_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000045 ;
+                                       rdfs:label "Stadtteilschule" .
+
+
+###  https://w3id.org/schulart/HH_0000003
+<https://w3id.org/schulart/HH_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/HH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000045 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/MV_0000000
+<https://w3id.org/schulart/MV_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Schularten (Mecklenburg-Vorpommern)" .
+
+
+###  https://w3id.org/schulart/MV_0000001
+<https://w3id.org/schulart/MV_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/MV_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/MV_0000002
+<https://w3id.org/schulart/MV_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/MV_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Regionale Schule" .
+
+
+###  https://w3id.org/schulart/MV_0000003
+<https://w3id.org/schulart/MV_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/MV_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Kooperative Gesamtschule" .
+
+
+###  https://w3id.org/schulart/MV_0000004
+<https://w3id.org/schulart/MV_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/MV_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/MV_0000005
+<https://w3id.org/schulart/MV_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/MV_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000052 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/NI_0000000
+<https://w3id.org/schulart/NI_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Schularten (Niedersachsen)" .
+
+
+###  https://w3id.org/schulart/NI_0000001
+<https://w3id.org/schulart/NI_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/NI_0000002
+<https://w3id.org/schulart/NI_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Hauptschule" .
+
+
+###  https://w3id.org/schulart/NI_0000003
+<https://w3id.org/schulart/NI_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Realschule" .
+
+
+###  https://w3id.org/schulart/NI_0000004
+<https://w3id.org/schulart/NI_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s07> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Oberschule" .
+
+
+###  https://w3id.org/schulart/NI_0000005
+<https://w3id.org/schulart/NI_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Kooperative Gesamtschule" .
+
+
+###  https://w3id.org/schulart/NI_0000006
+<https://w3id.org/schulart/NI_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/NI_0000007
+<https://w3id.org/schulart/NI_0000007> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NI_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000043 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/NW_0000000
+<https://w3id.org/schulart/NW_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       rdfs:label "Schularten (Nordrhein-Westfalen)" .
+
+
+###  https://w3id.org/schulart/NW_0000001
+<https://w3id.org/schulart/NW_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000001 ,
+                                                           ontology:LP_2000002 ,
+                                                           ontology:LP_2000003 ,
+                                                           ontology:LP_2000004 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0030370 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/NW_0000002
+<https://w3id.org/schulart/NW_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0000134 ,
+                                                           ontology:LP_0000138 ;
+                                       rdfs:label "Hauptschule" .
+
+
+###  https://w3id.org/schulart/NW_0000003
+<https://w3id.org/schulart/NW_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0000142 ;
+                                       rdfs:label "Realschule" .
+
+
+###  https://w3id.org/schulart/NW_0000004
+<https://w3id.org/schulart/NW_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s10> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0000130 ,
+                                                           ontology:LP_0000131 ;
+                                       rdfs:label "Sekundarschule" .
+
+
+###  https://w3id.org/schulart/NW_0000005
+<https://w3id.org/schulart/NW_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0000130 ,
+                                                           ontology:LP_0000131 ,
+                                                           ontology:LP_0030351 ;
+                                       rdfs:label "Gesamtschule" .
+
+
+###  https://w3id.org/schulart/NW_0000006
+<https://w3id.org/schulart/NW_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/NW_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000044 ;
+                                       ontology:LP_0000833 ontology:LP_0000132 ,
+                                                           ontology:LP_0030351 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/RP_0000000
+<https://w3id.org/schulart/RP_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000046 ;
+                                       rdfs:label "Schularten (Rheinland-Pfalz)" .
+
+
+###  https://w3id.org/schulart/RP_0000001
+<https://w3id.org/schulart/RP_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/RP_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000046 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/RP_0000002
+<https://w3id.org/schulart/RP_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/RP_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000046 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/RP_0000003
+<https://w3id.org/schulart/RP_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/RP_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000046 ;
+                                       rdfs:label "Realschule plus" .
+
+
+###  https://w3id.org/schulart/RP_0000004
+<https://w3id.org/schulart/RP_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/RP_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000046 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/SH_0000000
+<https://w3id.org/schulart/SH_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000054 ;
+                                       rdfs:label "Schularten (Schleswig-Holstein)" .
+
+
+###  https://w3id.org/schulart/SH_0000001
+<https://w3id.org/schulart/SH_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000054 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/SH_0000002
+<https://w3id.org/schulart/SH_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000054 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/SH_0000003
+<https://w3id.org/schulart/SH_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SH_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000054 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/SL_0000000
+<https://w3id.org/schulart/SL_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Schularten (Saarland)" .
+
+
+###  https://w3id.org/schulart/SL_0000001
+<https://w3id.org/schulart/SL_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SL_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/SL_0000002
+<https://w3id.org/schulart/SL_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SL_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/SL_0000003
+<https://w3id.org/schulart/SL_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SL_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/SL_0000004
+<https://w3id.org/schulart/SL_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SL_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Deutsch-Luxemburgisches Schengen-Lyzeum" .
+
+
+###  https://w3id.org/schulart/SL_0000005
+<https://w3id.org/schulart/SL_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SL_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000055 ;
+                                       rdfs:label "Europäische Schule Saarland" .
+
+
+###  https://w3id.org/schulart/SN_0000000
+<https://w3id.org/schulart/SN_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Schularten (Sachsen)" .
+
+
+###  https://w3id.org/schulart/SN_0000001
+<https://w3id.org/schulart/SN_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/SN_0000002
+<https://w3id.org/schulart/SN_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/SN_0000003
+<https://w3id.org/schulart/SN_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s07> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Oberschule" .
+
+
+###  https://w3id.org/schulart/SN_0000004
+<https://w3id.org/schulart/SN_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s07> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Oberschule+" .
+
+
+###  https://w3id.org/schulart/SN_0000005
+<https://w3id.org/schulart/SN_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/SN_0000006
+<https://w3id.org/schulart/SN_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/SN_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000047 ;
+                                       rdfs:label "Klinik- und Krankenhausschule" .
+
+
+###  https://w3id.org/schulart/ST_0000000
+<https://w3id.org/schulart/ST_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Schularten (Sachsen-Anhalt)" .
+
+
+###  https://w3id.org/schulart/ST_0000001
+<https://w3id.org/schulart/ST_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/ST_0000002
+<https://w3id.org/schulart/ST_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s10> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Sekundarschule" .
+
+
+###  https://w3id.org/schulart/ST_0000003
+<https://w3id.org/schulart/ST_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/ST_0000004
+<https://w3id.org/schulart/ST_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Kooperative Gesamtschule" .
+
+
+###  https://w3id.org/schulart/ST_0000005
+<https://w3id.org/schulart/ST_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/ST_0000006
+<https://w3id.org/schulart/ST_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/ST_0000000> ;
+                                       ontology:LP_0000029 ontology:LP_3000053 ;
+                                       rdfs:label "Gymnasium" .
+
+
+###  https://w3id.org/schulart/TH_0000000
+<https://w3id.org/schulart/TH_0000000> rdf:type owl:NamedIndividual ,
+                                                skos:ConceptScheme ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       rdfs:label "Schularten (Thüringen)" .
+
+
+###  https://w3id.org/schulart/TH_0000001
+<https://w3id.org/schulart/TH_0000001> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000001 ,
+                                                           ontology:LP_2000002 ,
+                                                           ontology:LP_2000003 ,
+                                                           ontology:LP_2000004 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0030376 ;
+                                       rdfs:label "Grundschule" .
+
+
+###  https://w3id.org/schulart/TH_0000002
+<https://w3id.org/schulart/TH_0000002> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s09> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000001 ,
+                                                           ontology:LP_2000002 ,
+                                                           ontology:LP_2000003 ,
+                                                           ontology:LP_2000004 ,
+                                                           ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0000309 ,
+                                                           ontology:LP_0000310 ,
+                                                           ontology:LP_0000311 ,
+                                                           ontology:LP_0030358 ,
+                                                           ontology:LP_0030359 ,
+                                                           ontology:LP_0030376 ;
+                                       rdfs:label "Gemeinschaftsschule" .
+
+
+###  https://w3id.org/schulart/TH_0000003
+<https://w3id.org/schulart/TH_0000003> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0000309 ,
+                                                           ontology:LP_0000310 ,
+                                                           ontology:LP_0000311 ;
+                                       rdfs:label "Regelschule" .
+
+
+###  https://w3id.org/schulart/TH_0000004
+<https://w3id.org/schulart/TH_0000004> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0000309 ,
+                                                           ontology:LP_0000310 ,
+                                                           ontology:LP_0000311 ,
+                                                           ontology:LP_0030358 ,
+                                                           ontology:LP_0030359 ;
+                                       rdfs:label "Kooperative Gesamtschule" .
+
+
+###  https://w3id.org/schulart/TH_0000005
+<https://w3id.org/schulart/TH_0000005> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0000309 ,
+                                                           ontology:LP_0000310 ,
+                                                           ontology:LP_0000311 ,
+                                                           ontology:LP_0030358 ,
+                                                           ontology:LP_0030359 ;
+                                       rdfs:label "Integrierte Gesamtschule" .
+
+
+###  https://w3id.org/schulart/TH_0000006
+<https://w3id.org/schulart/TH_0000006> rdf:type owl:NamedIndividual ,
+                                                skos:Concept ,
+                                                ontology:LP_0000111 ;
+                                       skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
+                                       skos:topConceptOf <https://w3id.org/schulart/TH_0000000> ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000031 ;
+                                       ontology:LP_0000833 ontology:LP_0030358 ,
+                                                           ontology:LP_0030359 ;
+                                       rdfs:label "Gymnasium" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( ontology:LP_0000583
+                        ontology:LP_0000584
+                        ontology:LP_0000585
+                        ontology:LP_0000586
+                        ontology:LP_0000587
+                        ontology:LP_0000588
+                        ontology:LP_0000589
+                        ontology:LP_0000590
+                        ontology:LP_0000591
+                        ontology:LP_0000592
+                        ontology:LP_0000593
+                        ontology:LP_0000594
+                        ontology:LP_0000595
+                        ontology:LP_0000596
+                        ontology:LP_0000597
+                        ontology:LP_0000598
+                        ontology:LP_0000599
+                        ontology:LP_0000600
+                        ontology:LP_0000601
+                        ontology:LP_0000602
+                        ontology:LP_0000603
+                        ontology:LP_0000604
+                        ontology:LP_0000605
+                        ontology:LP_0000606
+                        ontology:LP_0000607
+                        ontology:LP_0000608
+                        ontology:LP_0000609
+                        ontology:LP_0000610
+                        ontology:LP_0000611
+                        ontology:LP_0000612
+                        ontology:LP_0000613
+                        ontology:LP_0000614
+                        ontology:LP_0000615
+                      )
+] .
+
+
+[ rdf:type owl:AllDifferent ;
+  owl:distinctMembers ( ontology:LP_2000001
+                        ontology:LP_2000002
+                        ontology:LP_2000003
+                        ontology:LP_2000004
+                        ontology:LP_2000005
+                        ontology:LP_2000006
+                        ontology:LP_2000007
+                        ontology:LP_2000008
+                        ontology:LP_2000009
+                        ontology:LP_2000010
+                        ontology:LP_2000011
+                        ontology:LP_2000012
+                        ontology:LP_2000013
+                      )
+] .
+
+
+###  Generated by the OWL API (version 4.5.29) https://github.com/owlcs/owlapi

@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/schulart/sa/components/levels.owl/"
+     xml:base="https://w3id.org/schulart/sa/components/levels.owl/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="https://w3id.org/schulart/sa/components/levels.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_0000009 -->
+
+    <owl:Class rdf:about="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000001 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000001">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000002 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000002">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000003 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000003">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000004 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000004">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000005 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000005">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000006 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000006">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000007 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000007">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000008 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000008">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000009 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000009">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg9</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000010 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000010">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000011 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000011">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000012 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000012">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/lehrplan/ontology/LP_2000013 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/lehrplan/ontology/LP_2000013">
+        <rdf:type rdf:resource="https://w3id.org/lehrplan/ontology/LP_0000009"/>
+        <rdfs:label>jg13</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000001"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000002"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000003"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000004"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000005"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000006"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000007"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000008"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000009"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000010"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000011"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000012"/>
+            <rdf:Description rdf:about="https://w3id.org/lehrplan/ontology/LP_2000013"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

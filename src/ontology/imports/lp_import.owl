@@ -1,0 +1,1836 @@
+Prefix(:=<https://w3id.org/schulart/sa/imports/lp_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/schulart/sa/imports/lp_import.owl>
+<https://w3id.org/schulart/sa/releases/2025-12-09/imports/lp_import.owl>
+Annotation(owl:versionInfo "2025-12-09")
+
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000009>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000028>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000069>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000111>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000572>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000573>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000574>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000575>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000576>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000577>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000832>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000834>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0000835>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001011>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001019>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001028>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001032>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001035>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001038>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001101>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001105>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0001108>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030039>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030041>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030053>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030080>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030091>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030361>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030366>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030378>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030379>))
+Declaration(Class(<https://w3id.org/lehrplan/ontology/LP_0030380>))
+Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000026>))
+Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000029>))
+Declaration(ObjectProperty(<https://w3id.org/lehrplan/ontology/LP_0000833>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000014>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000016>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000018>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000022>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000023>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000025>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000027>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000030>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000031>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000034>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000035>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000038>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000044>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000090>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000091>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000092>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000093>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000094>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000095>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000096>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000097>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000098>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000099>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000100>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000101>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000102>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000103>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000104>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000107>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000108>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000110>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000116>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000117>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000118>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000129>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000130>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000131>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000132>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000134>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000138>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000142>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000143>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000147>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000151>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000193>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000216>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000236>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000249>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000260>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000264>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000266>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000267>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000269>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000279>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000293>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000294>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000295>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000296>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000297>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000298>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000299>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000309>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000310>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000311>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000583>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000584>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000585>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000586>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000587>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000588>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000589>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000590>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000591>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000592>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000593>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000594>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000595>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000596>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000597>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000598>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000599>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000600>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000601>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000602>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000603>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000604>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000605>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000606>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000607>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000608>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000609>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000610>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000611>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000612>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000613>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000614>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0000615>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030345>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030346>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030347>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030348>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030349>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030350>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030351>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030352>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030353>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030354>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030355>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030356>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030357>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030358>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030359>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030360>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030362>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030363>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030364>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030365>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030367>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030368>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030369>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030370>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030371>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030372>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030373>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030374>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030375>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030376>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030377>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030381>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030382>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030383>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030384>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030385>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030386>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030387>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030388>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030389>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030390>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030391>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030392>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030393>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030394>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030395>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030396>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030397>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030398>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030399>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030400>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030401>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030402>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_0030403>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000001>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000002>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000003>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000004>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000005>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000006>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000007>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000008>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000009>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000010>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000011>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000012>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_2000013>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000031>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000043>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000044>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000045>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000046>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000047>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000048>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000049>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000050>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000051>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000052>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000053>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000054>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000055>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000056>))
+Declaration(NamedIndividual(<https://w3id.org/lehrplan/ontology/LP_3000057>))
+Declaration(AnnotationProperty(<http://purl.org/dc/terms/identifier>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#editorialNote>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#example>))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000026> (hat Jahrgangsstufe)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000026> "hat Jahrgangsstufe"@de)
+ObjectPropertyRange(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000009>)
+
+# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000029> (von Bundesland)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000029> "von Bundesland"@de)
+
+# Object Property: <https://w3id.org/lehrplan/ontology/LP_0000833> (hat Bildungsgangniveau)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000833> "hat Bildungsgangniveau"@de)
+ObjectPropertyRange(<https://w3id.org/lehrplan/ontology/LP_0000833> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000009> (Jahrgangsstufe)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000009> "A \"Jahrgangsstufe\" is an \"Information Content Entity\".
+It encompasses all classes and courses in which learners progress together through a specific stage of their educational journey.
+A \"Jahrgangsstufe\" refers to a systematic grouping of learners and indicates the phase of their educational path, defining the competencies and learning content intended for them.
+Upon completion of a school year, learners transition to the next \"Jahrgangsstufe\".
+In curricula, the \"Jahrgangsstufe\" serves as an organizational element that structures teaching content in an age-appropriate manner.
+Depending on the type of school and the federal state, \"Jahrgangsstufen\" may be referred to differently (e.g., \"Klassenstufen\") or grouped together, such as in the form of double year groups."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000009> "Eine “Jahrgangsstufe” ist eine “Informationseinheit”.
+Sie umfasst die Gesamtheit der Klassen und Kurse, in denen Lernende gemeinsam einen bestimmten Abschnitt ihrer schulischen Laufbahn durchlaufen.
+Eine Jahrgangsstufe bezeichnet eine systematische Einteilung der Lernenden und gibt an, in welcher Phase ihres Bildungswegs sie sich befinden und legt die für sie vorgesehenen Kompetenzen und Lerninhalte fest. Nach Abschluss eines Schuljahres erfolgt der Übergang in die nächste Jahrgangsstufe.
+In den Lehrplänen dient die Jahrgangsstufe als organisatorisches Element, das den Unterrichtsinhalt altersgerecht strukturiert. Je nach Schulart und Bundesland können Jahrgangsstufen unterschiedlich benannt werden, wie zum Beispiel “Klassenstufen”, oder zusammengefasst werden, beispielsweise in Form von Doppeljahrgangsstufen."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000009> "Jahrgangsstufe"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000009> "class level"@en)
+AnnotationAssertion(rdfs:seeAlso <https://w3id.org/lehrplan/ontology/LP_0000009> <https://de.wikipedia.org/wiki/Jahrgangsstufe>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000009> "Klassenstufe"@de)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000028> (Bildungsgangniveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000028> "Das “Bildungsgangniveau” ist ein “Niveau”, das die Anforderungen innerhalb eines “Bildungsgangs” beschreibt und dabei den Unterschied in den Leistungsniveaus zwischen verschiedenen Bildungsgängen kennzeichnet.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden. 
+In der Ontologie wird unterschieden zwischen dem “Hauptschulniveau”, dem “Realschulniveau”, dem “Gymnasialniveau Sek I” und dem “Gymnasialniveau Sek II”.
+Diese entsprechen den grundlegenden, mittleren und erweiterten Anforderungen, die in einigen Lehrplänen der Sekundarstufe I zur Kategorisierung von Kompetenzspezifikationen verwendet werden.
+Während das „Fachniveau Sek II“ die spezifischen Anforderungen in einem einzelnen Fach innerhalb des Gymnasialen Bildungsganges der Sekundarstufe II beschreibt, bezieht sich das „Bildungsgangniveau“ auf das Niveau eines gesamten Bildungsgangs, der auf einen bestimmten Abschluss abzielt."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000028> "The \"Bildungsgangniveau\" is a \"Niveau\" that describes the requirements within an \"Bildungsgang\" and characterizes the differences in performance levels between various educational tracks.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track.
+In the ontology, a distinction is made between \"Hauptschulniveau\", \"Realschulniveau\", \"Gymnasialniveau Sek I\", and \"Gymnasialniveau Sek II\".
+These correspond to the basic, intermediate, and advanced requirements used in some lower secondary curricula to categorize competences.
+While the \"Fachniveau Sek II\" describes the specific requirements in a single subject within the upper secondary level of the Gymnasium track, the \"Bildungsgangniveau\" refers to the level of an entire educational track aimed at a specific qualification."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000028> "Bildungsgangniveau"@de)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000069> (Gymnasialniveau Sek I)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000069> "Das \"Gymnasialniveau Sek I” ist ein “Bildungsgangniveau”, welches das Niveau des \"gymnasialen Bildungsgangs\" im Sekundarbereich I beschreibt und somit meistens die Jahrgangsstufen 5-10 umfasst.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000069> "The \"Gymnasialniveau Sek I\" is a \"Bildungsgangniveau\" that describes the level of the “Gymnasialer Bildungsgang” in lower secondary education, usually covering grades 5 to 10.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000069> "Gymnasialniveau Sek I"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000111> (school type)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000111> "A \"Schulart\" is a “information content entity”.
+It is a form of school characterized by specific features that define its organizational structure, pedagogical orientation, duration of the educational stage, and the intended school-leaving qualifications.
+Depending on the education system and the federal state, it may include different names and concepts such as Grundschule, Gymnasium, Realschule, Hauptschule, Gesamtschule, vocational school (\"Berufsschule\"), or special needs school (\"Förderschule\").
+In everyday language, \"Schulart\" and \"Schulform\" are often used synonymously."@en)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000111> "Eine “Schulart” ist eine “Informationseinheit”.
+Sie beschreibt eine durch bestimmte Merkmale gekennzeichnete Form der Schule, die deren organisatorische Struktur, pädagogische Ausrichtung, die Dauer des Bildungsgangabschnitts sowie die angestrebten Schulabschlüsse festlegt. Sie kann je nach Bildungssystem und Bundesland unterschiedliche Bezeichnungen und Konzepte umfassen, wie Grundschule, Gymnasium, Realschule, Hauptschule, Gesamtschule, Berufsschule oder Förderschule.
+Im allgemeinen Sprachgebrauch werden “Schulart” und \"Schulform\" synonym verwendet."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000111> "Schulart"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000111> "school type"@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000111> "type of school"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000111> "Schulform"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000111> "Schultyp"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#example> <https://w3id.org/lehrplan/ontology/LP_0000111> "Die Schulform einer Schule kann sich ändern. Deshalb werden die Schulformen als \"Kategorie\" der Funktionen einer Schule definiert. So  ist es möglich, dass einer konkreten Schule mehrere Schulformen zugeordnet werden können, und sodass jede Schulform an einen Zeitpunkt geknüpft werden kann.
+
+https://www.echo-online.de/lokales/kreis-gross-gerau/landkreis-gross-gerau/aenderung-der-schulform-war-ueberfaellig-4054079
+
+Bsp: 
+:schuleTrebur a :Schule .
+
+:schuleTreburSchulform1 a Schulartfunktion .
+:schuleTreburSchulform1 bfo:existsAt :someTimeIntervalUntilDateX .
+:schuleTreburSchulform1 :konkretisiertSchulform :Realschule .
+
+:schuleTreburSchulform2 a Schulartfunktion .
+:schuleTreburSchulform2 bfo:existsAt :someTimeIntervalUntilDateX .
+:schuleTreburSchulform2 :konkretisiertSchulform :Hauptschule .
+
+:schuleTreburSchulform3 a Schulartfunktion .
+:schuleTreburSchulform3 :konkretisiertSchulform :Gesamtschule 
+:schuleTreburSchulform3 bfo:existsAt :someTimeIntervalFromDateY .
+
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform1 .
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform2 .
+:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform3 .
+
+:someTimeIntervalUntilDateX  bfo:precedes :someTimeIntervalUntilDateY .")
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000572> (Bildungsgangniveau (BE))
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000572> "Ein Lehrplanelement von Berlin mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000572> "Ein Lehrplanelement von Berlin/Brandenburg mit dem ein zu erreichender Abschluss in Verbindung mit den Niveaustufe und Jahrgangsstufe zum Ausdruck gebracht wird. Unterklassen entprechen den konkreten Abschlussniveaus. Deren Instanzen enthalten die Verknüfung zu Niveaustufe und Jahrgangsstufe."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000572> "Bildungsgangniveau (BE)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000572> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000573> (BOA Niveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000573> "Abschluss Niveau, das zum berufsorientierenden Abschluss befähigt."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000573> "BOA Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000572>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000574> (BBR Niveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000574> "Abschluss Niveau, das zur Berufsbildungsreife befähigt."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000574> "BBR Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000572>)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000574> ObjectIntersectionOf(<https://w3id.org/lehrplan/ontology/LP_0000834> ObjectHasValue(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/lehrplan/ontology/LP_3000048>)))
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000575> (EBBR Niveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000575> "Abschluss Niveau, dass zur erweiterten Berufsbildungsreife befähigt"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000575> "EBBR Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000572>)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000575> ObjectIntersectionOf(<https://w3id.org/lehrplan/ontology/LP_0000834> ObjectHasValue(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/lehrplan/ontology/LP_3000048>)))
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000576> (MSA Niveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000576> "Abschluss Niveau, das zum mittlereren Schulabschluss befähigt."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000576> "MSA Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000572>)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000576> ObjectIntersectionOf(<https://w3id.org/lehrplan/ontology/LP_0000832> ObjectHasValue(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/lehrplan/ontology/LP_3000048>)))
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000577> (Gymnasialniveau Sek I (BE))
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000577> "Abschluss Niveau, das zum Übergang in die 2-jährige Qualifikationsphase (Abitur) befähigt."@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000577> "Gymnasialniveau Sek I (BE)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000572>)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000577> ObjectIntersectionOf(<https://w3id.org/lehrplan/ontology/LP_0000069> ObjectHasValue(<https://w3id.org/lehrplan/ontology/LP_0000029> <https://w3id.org/lehrplan/ontology/LP_3000048>)))
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000832> (Realschulniveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000832> "Das “Realschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des
+\"Realschulbildungsgangs\" beschreibt. 
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000832> "The \"Realschulniveau\" is a \"Bildungsgangniveau\" that describes the level of the “Realschulbildungsgang”.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000832> "Realschulniveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000834> (Hauptschulniveau)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000834> "Das “Hauptschulniveu” ist ein “Bildungsgangniveau”, welches das Niveau des \"Hauptschulbildungsgangs\" beschreibt. 
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000834> "The \"Hauptschulniveau\" is a \"Bildungsgangniveau\" that describes the level of the “Hauptschulbildungsgang”.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track."@en)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000834> "Hauptschulniveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0000835> (Gymnasialniveau Sek II)
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000835> "Das “Gymnasialniveau Sek II” ist ein “Bildungsgangniveau”, welches das Niveau des \"gymnasialen Bildungsgangs\" im Sekundarbereich II beschreibt und somit meistens die Jahrgangsstufen 11-13 umfasst.
+Es beschreibt in welcher Tiefe und mit welchem Anspruch die Lerninhalte und Kompetenzen innerhalb dieses Bildungsgangs behandelt werden."@de)
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000835> "The \"Gymnasialniveau Sek II\" is a \"Bildungsgangniveau\" that describes the level of the “Gymnasialer Bildungsgangs” in upper secondary education, usually covering grades 11 to 13.
+It describes the depth and level of demand with which learning content and competencies are addressed within this educational track.")
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000835> "Gymnasialniveau Sek II"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001011> (Bildungsgangniveau (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001011> "Bildungsgangniveau (MV)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001019> (Bildungsgangniveau (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001019> "Bildungsgangniveau (RP)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001028> (Bildungsgangniveau (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001028> "Bildungsgangniveau (SL)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001032> (Bildungsgangniveau (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001032> "Bildungsgangniveau (SN)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001035> (Bildungsgangniveau (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001035> "Bildungsgangniveau (ST)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001038> (Bildungsgangniveau (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001038> "Bildungsgangniveau (TH)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001101> (Bildungsgangniveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001101> "Bildungsgangniveau (BW)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001105> (Bildungsgangniveau (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001105> "Bildungsgangniveau (HB)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0001108> (Bildungsgangniveau (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0001108> "Bildungsgangniveau (HH)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030039> (Bildungsgangniveau (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030039> "Bildungsgangniveau (HE)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030041> (Bildungsgangniveau (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030041> "Bildungsgangniveau (NW)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030053> (Bildungsgangniveau (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030053> "Bildungsgangniveau (BY)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030080> (Bildungsgangniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030080> "Bildungsgangniveau (NI)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030091> (Bildungsgangniveau (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030091> "Bildungsgangniveau (SH)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030361> (Grundschulniveau)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030361> "Grundschulniveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030366> (Bildungsgangniveau (BB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030366> "Bildungsgangniveau (BB)"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030366> <https://w3id.org/lehrplan/ontology/LP_0000028>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030378> (EBR Niveau)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030378> "EBR Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0000834>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030379> (FOR Niveau)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030379> "FOR Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0000832>)
+
+# Class: <https://w3id.org/lehrplan/ontology/LP_0030380> (FOR-Q Niveau)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030380> "FOR-Q Niveau"@de)
+SubClassOf(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0000069>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000014> (E Niveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000014> "E Niveau (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000014>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0000014>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000016> (G Niveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000016> "G Niveau (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000016>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0000016>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000018> (Gymnasialniveau Sek I (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000018> "Gymnasialniveau Sek I (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000018>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0000018>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000022> (M Niveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000022> "M Niveau (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000022>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0000022>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000023> (Gymnasialniveau Sek I (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000023> "Gymnasialniveau Sek I (BY)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000023>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000023>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000025> (Mittelschulniveau (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000025> "Mittelschulniveau (BY)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000025> "gilt für die Jahrgangsstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000025>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000025>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000025> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000025> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000027> (Mittlere-Reife-Klasse (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000027> "Mittlere-Reife-Klasse (BY)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000027> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000027>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000027>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000027> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000027> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000027> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000027> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000030> (Realschulniveau (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000030> "Realschulniveau (BY)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000030>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000030>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000031> (Regelklasse (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000031> "Regelklasse (BY)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000031>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0000031>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000031> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000031> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000031> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000034> (Erweitertes Anforderungsniveau (HB))
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000034> "Bezeichnet das Niveau, das an Gesamt-, Regel-, Sekundar-, u.ä. Schulen sowie Gymnasien bzgl. der Klassenstufen kleiner 11 gilt und das einem gymnasialen Bildungsgang entspricht. D.h. die Schülerinnen und Schüler verfolgen einen Bildungsgang, der zum Abitur führt, sind aber noch nicht in der gymnasialen Oberstufe (Klassenstufe 11/12/13).")
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000034> "Erweitertes Anforderungsniveau (HB)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000034>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000034>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0000034>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000034> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000034> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000034> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000034> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000035> (Grundlegendes Anforderungsniveau (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000035> "Grundlegendes Anforderungsniveau (HB)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000035> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000035>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0000035>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000035> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000035> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000035> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000035> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000038> (Gymnasialniveau Sek I (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000038> "Gymnasialniveau Sek I (HB)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000038>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0000038>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000044> (Oberschulniveau (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000044> "Oberschulniveau (HB)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000044> "gilt für die Jahrgangsstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000044>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000044>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000044>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0000044>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000044> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000044> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000090> (Gymnasialniveau Sek I (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000090> "Gymnasialniveau Sek I (HE)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000090>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0000090>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000091> (Hauptschulniveau (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000091> "Hauptschulniveau (HE)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000091>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0000091>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000092> (Realschulniveau (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000092> "Realschulniveau (HE)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000092>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0000092>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000093> (Erhöhte Anforderungen (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000093> "Erhöhte Anforderungen (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000093> "gilt nur für die Jahrgangstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000093>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000093>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000093>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000093> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000093> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000094> (Gymnasialniveau Sek I (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000094> "Gymnasialniveau Sek I (HH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000094>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000094>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000095> (Mindestanforderungen (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000095> "Mindestanforderungen (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000095> "gilt nur für die Jahrgangstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000095>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000095>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000095> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000095> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000096> (Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000096> "Mindestanforderungen für den ersten allgemeinbildenden Schulabschluss (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000096> "gilt für die Jahrgangsstufen 7-9")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000096>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000096>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000096> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000096> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000096> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000097> (Mindestanforderungen für den mittleren Schulabschluss (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000097> "Mindestanforderungen für den mittleren Schulabschluss (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000097> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000097>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000097>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000097> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000097> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000097> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000097> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000098> (Mindestanforderungen für den Übergang in die Studienstufe (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000098> "Mindestanforderungen für den Übergang in die Studienstufe (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000098> "gilt für die Jahrgangsstufen 9-11")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000098>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0000098>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000098> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000098> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000098> <https://w3id.org/lehrplan/ontology/LP_2000011>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000099> (Gymnasialniveau Sek I (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000099> "Gymnasialniveau Sek I (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000099>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0000099>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000100> (Bildungsgangniveau Berufsreife (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000100> "Bildungsgangniveau Berufsreife (MV)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000100> "KMK Bildungsstandards für den ersten Schulabschluss (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000100>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0000100>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000101> (Bildungsgangniveau Mittlere Reife (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000101> "Bildungsgangniveau Mittlere Reife (MV)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000101> "KMK Bildungsstandards für den mittleren Schulabschluss (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000101>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0000101>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000102> (Orientierungsstufeniveau (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000102> "Orientierungsstufeniveau (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000102>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000102>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000102>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0000102>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000102> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000102> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000103> (Erhöhte Anforderungen (E-Kurs) (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000103> "Erhöhte Anforderungen (E-Kurs) (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000103> "für die Gesamtschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000103>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000103>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000104> (Grundlegende Anforderungen (G-Kurs) (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000104> "Grundlegende Anforderungen (G-Kurs) (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000104> "für die Gesamtschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000104>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000104>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000104>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000107> (Gymnasialniveau Sek I (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000107> "Gymnasialniveau Sek I (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000107>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000107>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000108> (Hauptschulniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000108> "Hauptschulniveau (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000108>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000108>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000110> (Oberschulniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000110> "Oberschulniveau (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000110>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000110>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000110>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000116> (Realschulniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000116> "Realschulniveau (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000116>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000116>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000117> (Vertiefendes Niveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000117> "Vertiefendes Niveau (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000117> "für die Gesamtschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000117>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000117>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000117>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000118> (Zusätzliche Anforderungen (Z-Kurs) (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000118> "Zusätzliche Anforderungen (Z-Kurs) (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000118> "für die Gesamtschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000118>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000118>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000129> (Zusätzliche Voraussetzungen für den Erwerb des Mittleres Schulabschlusses (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000129> "Zusätzliche Voraussetzungen für den Erwerb des Mittleres Schulabschlusses (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000129> "für die Hauptschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000129>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0000129>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000130> (Erweiterungskurs (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000130> "Erweiterungskurs (NW)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000130> "für Gesamt- und Sekundarschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000130>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000130>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000130>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000131> (Gesamt-/Sekundarschulniveau (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000131> "Gesamt-/Sekundarschulniveau (NW)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000131> "Basisniveau für die Gesamtschule und die Sekundarschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000131>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000131>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000132> (Gymnasialniveau Sek I (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000132> "Gymnasialniveau Sek I (NW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000132>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000132>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000134> (Hauptschulniveau (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000134> "Hauptschulniveau (NW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000134>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000134>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000138> (Niveau Mittlerer Schulabschluss (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000138> "Niveau Mittlerer Schulabschluss (NW)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000138> "für Hauptschule")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000138>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000138>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000142> (Realschulniveau (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000142> "Realschulniveau (NW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000142>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0000142>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000143> (Erhöhtes Kompetenzniveau (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000143> "Erhöhtes Kompetenzniveau (RP)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000143>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0000143>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000147> (Grundlegendes Kompetenzniveau (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000147> "Grundlegendes Kompetenzniveau (RP)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000147>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0000147>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000151> (Mittleres Kompetenzniveau (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000151> "Mittleres Kompetenzniveau (RP)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000151>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0000151>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000193> (Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000193> "Anforderungen für den Ersten allgemeinbildenden Schulabschluss (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000193>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0000193>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000216> (Anforderungen für den Mittleren Schulabschluss (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000216> "Anforderungen für den Mittleren Schulabschluss (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000216>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0000216>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000236> (Anforderungen für die Allgemeine Hochschulreife Sek I (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000236> "Anforderungen für die Allgemeine Hochschulreife Sek I (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000236>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0000236>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000249> (Sekundarstufenniveau (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000249> "Sekundarstufenniveau (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000249>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000249>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000249>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0000249>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000260> (A Kurs (SL))
+
+AnnotationAssertion(rdfs:comment <https://w3id.org/lehrplan/ontology/LP_0000260> "gilt für die Jahrgangsstufen 9-10")
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000260> "A Kurs (SL)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000260>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000260>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000260> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000260> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000264> (E Kurs (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000264> "E Kurs (SL)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000264> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000264>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000264>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000264> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000264> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000264> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000264> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000266> (G Kurs (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000266> "G Kurs (SL)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000266> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000266>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000266>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000266> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000266> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000266> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000266> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000267> (Gemeinschaftschulniveau (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000267> "Gemeinschaftschulniveau (SL)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000267> "gilt für die Jahrgangsstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000267>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000267>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000267>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000267>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000267> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000267> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000269> (Gymnasialniveau Sek I (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000269> "Gymnasialniveau Sek I (SL)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000269>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0000269>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000279> (Gymnasialniveau Sek I (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000279> "Gymnasialniveau Sek I (SN)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000279>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0000279>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000293> (Hauptschulbildungsgangniveau (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000293> "Hauptschulbildungsgangniveau (SN)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000293> "Achtung hier ist das Niveau gemeint, nicht der Bildungsgang.
+
+gilt für die Jahrgangsstufen 7-9")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000293>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0000293>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000293> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000293> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000293> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000294> (Oberschulniveau (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000294> "Oberschulniveau (SN)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000294> "gilt für die Jahrgangsstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000294>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000294>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0000294>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000294> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000294> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000295> (Realschulbildungsgangniveau (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000295> "Realschulbildungsgangniveau (SN)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000295> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000295>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0000295>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000295> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000295> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000295> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000295> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000296> (Gymnasialniveau Sek I (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000296> "Gymnasialniveau Sek I (ST)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000296>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0000296>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000297> (Hauptschulabschlussbezogener Unterricht (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000297> "Hauptschulabschlussbezogener Unterricht (ST)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000297> "gilt für die Jahrgangsstufen 7-9")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000297>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0000297>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000297> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000297> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000297> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000298> (Realschulabschlussbezogener Unterricht (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000298> "Realschulabschlussbezogener Unterricht (ST)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000298> "gilt für die Jahrgangsstufen 7-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000298>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0000298>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000298> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000298> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000298> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000298> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000299> (Sekundarschulniveau (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000299> "Sekundarschulniveau (ST)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000299> "gilt für die Jahrgangsstufen 5-6")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0000299>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000299>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000299>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0000299>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000299> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000299> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000309> (Regelschulniveau (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000309> "Regelschulniveau (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0000309> "Niveau für den Erwerb des Hauptschul- und des Realschulabschlusses (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000309> "gilt für die Jahrgangsstufen 5-8")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000309>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000309>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0000309>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000309> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000309> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000309> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000309> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000310> (Hauptschulabschlussbezogener Kurs (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000310> "Hauptschulabschlussbezogener Kurs (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000310> "gilt für die Jahrgangsstufen 9-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000834> <https://w3id.org/lehrplan/ontology/LP_0000310>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0000310>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000310> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000310> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000311> (Realschulabschlussbezogener Kurs (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000311> "Realschulabschlussbezogener Kurs (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0000311> "gilt für die Jahrgangsstufen 9-10")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000832> <https://w3id.org/lehrplan/ontology/LP_0000311>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0000311>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000311> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000311> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000583> (BOA A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000583> "BOA A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000583>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000583>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000583> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000583> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000584> (BOA B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000584> "BOA B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000584>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000584>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000584> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000584> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000585> (BOA C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000585> "BOA C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000585>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000585>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000586> (BOA D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000586> "BOA D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000586>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000586> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000586> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000586> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000587> (BOA E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000587> "BOA E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000573> <https://w3id.org/lehrplan/ontology/LP_0000587>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000587> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000587> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000588> (BBR A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000588> "BBR A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000588>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000588>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000588> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000589> (BBR B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000589> "BBR B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000589>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000589>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000589> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000589> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000589> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000590> (BBR C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000590> "BBR C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000590>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000590>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000590> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000590> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000590> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000591> (BBR D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000591> "BBR D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000591>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000591>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000591> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000591> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000591> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000592> (BBR E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000592> "BBR E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000592>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000592> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000592> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000592> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000593> (BBR F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000593> "BBR F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000574> <https://w3id.org/lehrplan/ontology/LP_0000593>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000593> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000593> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000594> (EBBR A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000594> "EBBR A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000594>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000594>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000594> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000595> (EBBR B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000595> "EBBR B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000595>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000595>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000595> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000595> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000595> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000596> (EBBR C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000596> "EBBR C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000596>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000596>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000596> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000596> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000596> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000597> (EBBR D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000597> "EBBR D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000597>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000597>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000597> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000597> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000597> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000598> (EBBR E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000598> "EBBR E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000598>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000598> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000598> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000599> (EBBR F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000599> "EBBR F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000599>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000599> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000599> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000599> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000600> (EBBR G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000600> "EBBR G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000575> <https://w3id.org/lehrplan/ontology/LP_0000600>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000600> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000601> (MSA A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000601> "MSA A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000601>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000601>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000601> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000602> (MSA B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000602> "MSA B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000602>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000602>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000602> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000602> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000603> (MSA C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000603> "MSA C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000603>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000603>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000603> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000603> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000603> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000604> (MSA D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000604> "MSA D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000604>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000604>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000604> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000604> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000604> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000605> (MSA E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000605> "MSA E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000605>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000605>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000605> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000605> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000605> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000606> (MSA F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000606> "MSA F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000606>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000606> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000606> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000607> (MSA G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000607> "MSA G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000576> <https://w3id.org/lehrplan/ontology/LP_0000607>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000607> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000607> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000608> (Gymnasialniveau Sek I A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000608> "Gymnasialniveau Sek I A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000608>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000608>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000608> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000609> (Gymnasialniveau Sek I B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000609> "Gymnasialniveau Sek I B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000609>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000609>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000609> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000609> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000610> (Gymnasialniveau Sek I C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000610> "Gymnasialniveau Sek I C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000610>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000610>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000610> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000610> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000610> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000611> (Gymnasialniveau Sek I D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000611> "Gymnasialniveau Sek I D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000611>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000611>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000611> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000611> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000611> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000612> (Gymnasialniveau Sek I E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000612> "Gymnasialniveau Sek I E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000612>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0000612>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000612> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000612> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000613> (Gymnasialniveau Sek I F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000613> "Gymnasialniveau Sek I F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000613>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000613> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000614> (Gymnasialniveau Sek I G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000614> "Gymnasialniveau Sek I G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000614>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000614> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0000615> (Gymnasialniveau Sek I H)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0000615> "Gymnasialniveau Sek I H"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000577> <https://w3id.org/lehrplan/ontology/LP_0000615>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0000615> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030345> (Gymnasialniveau Sek II (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030345> "Gymnasialniveau Sek II (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030345>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0030345>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030346> (Gymnasialniveau Sek II (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030346> "Gymnasialniveau Sek II (BY)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030346>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0030346>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030347> (Oberstufenniveau (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030347> "Oberstufenniveau (HB)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030347> "Gymnasialniveau Sek II (HB)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030347>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0030347>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030348> (Oberstufenniveau (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030348> "Oberstufenniveau (HE)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030348> "Gymnasialniveau Sek II (HE)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030348>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0030348>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030349> (Studienstufenniveau (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030349> "Studienstufenniveau (HH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030349> "Gymnasialniveau Sek II (HH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030349>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0030349>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030350> (Gymnasialniveau Sek II (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030350> "Gymnasialniveau Sek II (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030350>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0030350>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030351> (Gymnasialniveau Sek II (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030351> "Gymnasialniveau Sek II (NW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030351>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0030351>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030352> (Oberstufenniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030352> "Oberstufenniveau (NI)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030352> "Gymnasialniveau Sek II (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030352>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0030352>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030353> (Niveau Sekundarstufe II (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030353> "Niveau Sekundarstufe II (RP)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030353> "Gymnasialniveau Sek II (RP)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030353>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0030353>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030354> (Anforderungen für die Allgemeine Hochschulreife Sek II (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030354> "Anforderungen für die Allgemeine Hochschulreife Sek II (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030354>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0030354>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030355> (Oberstufenniveau (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030355> "Oberstufenniveau (SL)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030355> "Gymnasialniveau Sek II (SL)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030355>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0030355>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030356> (Gymnasialniveau Sek II (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030356> "Gymnasialniveau Sek II (SN)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030356>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0030356>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030357> (Gymnasialniveau Sek II (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030357> "Gymnasialniveau Sek II (ST)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030357>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0030357>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030358> (Gymnasialniveau Sek II (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030358> "Gymnasialniveau Sek II (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030358> "Niveau für den Erwerb der allgemeinen Hochschulreife Sek II (TH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030358>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0030358>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030359> (Gymnasialniveau Sek I (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030359> "Gymnasialniveau Sek I (TH)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030359> "Niveau für den Erwerb der allgemeinen Hochschulreife Sek I (TH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000069> <https://w3id.org/lehrplan/ontology/LP_0030359>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0030359>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030360> (Oberstufenniveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030360> "Oberstufenniveau (BW)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#editorialNote> <https://w3id.org/lehrplan/ontology/LP_0030360> "an Gemeinschaftsschulen")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030360>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0030360>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030362> (Grundschulniveau (BW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030362> "Grundschulniveau (BW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001101> <https://w3id.org/lehrplan/ontology/LP_0030362>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030362>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030363> (Grundschulniveau (BY))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030363> "Grundschulniveau (BY)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030053> <https://w3id.org/lehrplan/ontology/LP_0030363>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030363>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030364> (Grundschulniveau (HB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030364> "Grundschulniveau (HB)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001105> <https://w3id.org/lehrplan/ontology/LP_0030364>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030364>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030365> (Grundschulniveau (HE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030365> "Grundschulniveau (HE)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030039> <https://w3id.org/lehrplan/ontology/LP_0030365>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030365>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030367> (Grundschulniveau (HH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030367> "Grundschulniveau (HH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001108> <https://w3id.org/lehrplan/ontology/LP_0030367>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030367>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030368> (Grundschulniveau (MV))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030368> "Grundschulniveau (MV)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001011> <https://w3id.org/lehrplan/ontology/LP_0030368>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030368>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030369> (Grundschulniveau (NI))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030369> "Grundschulniveau (NI)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030080> <https://w3id.org/lehrplan/ontology/LP_0030369>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030369>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030370> (Grundschulniveau (NW))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030370> "Grundschulniveau (NW)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030041> <https://w3id.org/lehrplan/ontology/LP_0030370>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030370>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030371> (Grundschulniveau (RP))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030371> "Grundschulniveau (RP)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001019> <https://w3id.org/lehrplan/ontology/LP_0030371>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030371>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030372> (Grundschulniveau (SH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030372> "Grundschulniveau (SH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030091> <https://w3id.org/lehrplan/ontology/LP_0030372>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030372>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030373> (Grundschulniveau (SL))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030373> "Grundschulniveau (SL)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001028> <https://w3id.org/lehrplan/ontology/LP_0030373>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030373>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030374> (Grundschulniveau (SN))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030374> "Grundschulniveau (SN)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001032> <https://w3id.org/lehrplan/ontology/LP_0030374>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030374>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030375> (Grundschulniveau (ST))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030375> "Grundschulniveau (ST)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001035> <https://w3id.org/lehrplan/ontology/LP_0030375>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030375>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030376> (Grundschulniveau (TH))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030376> "Grundschulniveau (TH)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0001038> <https://w3id.org/lehrplan/ontology/LP_0030376>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030376>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030377> (Oberstufenniveau (BE))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030377> "Oberstufenniveau (BE)"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_0030377> "Gymnasialniveau Sek II (BE)")
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000572> <https://w3id.org/lehrplan/ontology/LP_0030377>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030377>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030381> (FOR-Q A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030381> "FOR-Q A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030381>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030381>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030381> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030382> (FOR-Q B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030382> "FOR-Q B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030382>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030382>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030382> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030382> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030382> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030383> (FOR-Q C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030383> "FOR-Q C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030383>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030383>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030383> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030383> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030383> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030384> (FOR-Q D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030384> "FOR-Q D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030384>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030384>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030384> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030384> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030385> (FOR-Q E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030385> "FOR-Q E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030385>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030385> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030386> (FOR-Q F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030386> "FOR-Q F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030386>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030386> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030386> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030386> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030387> (FOR-Q G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030387> "FOR-Q G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030387>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030387> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030387> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030388> (FOR-Q H)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030388> "FOR-Q H"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030380> <https://w3id.org/lehrplan/ontology/LP_0030388>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030388> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030389> (FOR A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030389> "FOR A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030389>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030389>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030389> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030390> (FOR B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030390> "FOR B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030390>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030390>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030390> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030390> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030390> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030391> (FOR C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030391> "FOR C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030391>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030391>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030391> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030391> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030391> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030392> (FOR D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030392> "FOR D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030392>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030392>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030392> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030392> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030392> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030393> (FOR E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030393> "FOR E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030393>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030393> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030393> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030394> (FOR F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030394> "FOR F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030394>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030394> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030394> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030395> (FOR G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030395> "FOR G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030379> <https://w3id.org/lehrplan/ontology/LP_0030395>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030395> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030395> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030396> (EBR A)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030396> "EBR A"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030396>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030396>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030396> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030397> (EBR B)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030397> "EBR B"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030397>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030397>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030397> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030397> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030397> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030398> (EBR C)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030398> "EBR C"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030398>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030398>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030398> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030398> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030398> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030399> (EBR D)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030399> "EBR D"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030361> <https://w3id.org/lehrplan/ontology/LP_0030399>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030399>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030399> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030399> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030399> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030400> (EBR E)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030400> "EBR E"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030400>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030400> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030400> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030401> (EBR F)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030401> "EBR F"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030401>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030401> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030401> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030401> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030402> (EBR G)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030402> "EBR G"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030378> <https://w3id.org/lehrplan/ontology/LP_0030402>)
+ObjectPropertyAssertion(<https://w3id.org/lehrplan/ontology/LP_0000026> <https://w3id.org/lehrplan/ontology/LP_0030402> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_0030403> (Oberstufenniveau (BB))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_0030403> "Oberstufenniveau (BB)"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000835> <https://w3id.org/lehrplan/ontology/LP_0030403>)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0030366> <https://w3id.org/lehrplan/ontology/LP_0030403>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000001> (class level 1)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000001> "1"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000001> "Jahrgangsstufe 1"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000001> "class level 1"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000001> "1.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000001>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000002> (class level 2)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000002> "2"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000002> "Jahrgangsstufe 2"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000002> "class level 2"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000002> "2.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000002>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000003> (class level 3)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000003> "3"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000003> "Jahrgangsstufe 3"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000003> "class level 3"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000003> "3.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000003>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000004> (class level 4)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000004> "4"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000004> "Jahrgangsstufe 4"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000004> "class level 4"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000004> "4.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000004>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000005> (Jahrgangsstufe 5)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000005> "5"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000005> "Jahrgangsstufe 5"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000005> "class level 5"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000005> "5.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000005>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000006> (Jahrgangsstufe 6)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000006> "6"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000006> "Jahrgangsstufe 6"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000006> "class level 6"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000006> "6.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000006>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000007> (class level 7)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000007> "7"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000007> "Jahrgangsstufe 7"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000007> "class level 7"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000007> "7.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000007>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000008> (class level 8)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000008> "8"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000008> "Jahrgangsstufe 8"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000008> "class level 8"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000008> "8.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000008>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000009> (class level 9)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000009> "9"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000009> "Jahrgangsstufe 9"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000009> "class level 9"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000009> "9.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000009>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000010> (class level 10)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000010> "10"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000010> "Jahrgangsstufe 10"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000010> "class level 10"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000010> "10.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000010>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000011> (Jahrgangsstufe 11)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000011> "11"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000011> "Jahrgangsstufe 11"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000011> "class level 11"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000011> "11.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000011>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000012> (class level 12)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000012> "12"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000012> "Jahrgangsstufe 12"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000012> "class level 12"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000012> "12.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000012>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_2000013> (class level 13)
+
+AnnotationAssertion(<http://purl.org/dc/terms/identifier> <https://w3id.org/lehrplan/ontology/LP_2000013> "13"^^xsd:integer)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000013> "Jahrgangsstufe 13"@de)
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_2000013> "class level 13"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_2000013> "13.Klasse"@de)
+ClassAssertion(<https://w3id.org/lehrplan/ontology/LP_0000009> <https://w3id.org/lehrplan/ontology/LP_2000013>)
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000031> (Thüringen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000031> "Thüringen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000031> "TH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000043> (Niedersachsen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000043> "Niedersachsen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000043> "NI")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000044> (Nordrhein-Westfalen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000044> "Nordrhein-Westfalen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000044> "NW")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000045> (Hamburg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000045> "Hamburg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000045> "HH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000046> (Rheinland-Pfalz)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000046> "Rheinland-Pfalz"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000046> "RP")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000047> (Sachsen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000047> "Sachsen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000047> "SN")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000048> (Berlin)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000048> "Berlin"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000048> "BE")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000049> (Baden-Württemberg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000049> "Baden-Württemberg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000049> "BW")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000050> (Hessen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000050> "Hessen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000050> "HE")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000051> (Bayern)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000051> "Bayern"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000051> "BY")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000052> (Mecklenburg-Vorpommern)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000052> "Mecklenburg-Vorpommern"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000052> "MV")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000053> (Sachsen-Anhalt)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000053> "Sachsen-Anhalt"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000053> "ST")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000054> (Schleswig-Holstein)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000054> "Schleswig-Holstein"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000054> "SH")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000055> (Saarland)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000055> "Saarland"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000055> "SL")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000056> (Bremen)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000056> "Bremen"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000056> "HB")
+
+# Individual: <https://w3id.org/lehrplan/ontology/LP_3000057> (Brandenburg)
+
+AnnotationAssertion(rdfs:label <https://w3id.org/lehrplan/ontology/LP_3000057> "Brandenburg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/lehrplan/ontology/LP_3000057> "BB")
+
+
+DifferentIndividuals(<https://w3id.org/lehrplan/ontology/LP_0000583> <https://w3id.org/lehrplan/ontology/LP_0000584> <https://w3id.org/lehrplan/ontology/LP_0000585> <https://w3id.org/lehrplan/ontology/LP_0000586> <https://w3id.org/lehrplan/ontology/LP_0000587> <https://w3id.org/lehrplan/ontology/LP_0000588> <https://w3id.org/lehrplan/ontology/LP_0000589> <https://w3id.org/lehrplan/ontology/LP_0000590> <https://w3id.org/lehrplan/ontology/LP_0000591> <https://w3id.org/lehrplan/ontology/LP_0000592> <https://w3id.org/lehrplan/ontology/LP_0000593> <https://w3id.org/lehrplan/ontology/LP_0000594> <https://w3id.org/lehrplan/ontology/LP_0000595> <https://w3id.org/lehrplan/ontology/LP_0000596> <https://w3id.org/lehrplan/ontology/LP_0000597> <https://w3id.org/lehrplan/ontology/LP_0000598> <https://w3id.org/lehrplan/ontology/LP_0000599> <https://w3id.org/lehrplan/ontology/LP_0000600> <https://w3id.org/lehrplan/ontology/LP_0000601> <https://w3id.org/lehrplan/ontology/LP_0000602> <https://w3id.org/lehrplan/ontology/LP_0000603> <https://w3id.org/lehrplan/ontology/LP_0000604> <https://w3id.org/lehrplan/ontology/LP_0000605> <https://w3id.org/lehrplan/ontology/LP_0000606> <https://w3id.org/lehrplan/ontology/LP_0000607> <https://w3id.org/lehrplan/ontology/LP_0000608> <https://w3id.org/lehrplan/ontology/LP_0000609> <https://w3id.org/lehrplan/ontology/LP_0000610> <https://w3id.org/lehrplan/ontology/LP_0000611> <https://w3id.org/lehrplan/ontology/LP_0000612> <https://w3id.org/lehrplan/ontology/LP_0000613> <https://w3id.org/lehrplan/ontology/LP_0000614> <https://w3id.org/lehrplan/ontology/LP_0000615>)
+DifferentIndividuals(<https://w3id.org/lehrplan/ontology/LP_2000001> <https://w3id.org/lehrplan/ontology/LP_2000002> <https://w3id.org/lehrplan/ontology/LP_2000003> <https://w3id.org/lehrplan/ontology/LP_2000004> <https://w3id.org/lehrplan/ontology/LP_2000005> <https://w3id.org/lehrplan/ontology/LP_2000006> <https://w3id.org/lehrplan/ontology/LP_2000007> <https://w3id.org/lehrplan/ontology/LP_2000008> <https://w3id.org/lehrplan/ontology/LP_2000009> <https://w3id.org/lehrplan/ontology/LP_2000010> <https://w3id.org/lehrplan/ontology/LP_2000011> <https://w3id.org/lehrplan/ontology/LP_2000012> <https://w3id.org/lehrplan/ontology/LP_2000013>)
+)

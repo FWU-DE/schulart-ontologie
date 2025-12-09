@@ -1,0 +1,200 @@
+Prefix(:=<https://w3id.org/schulart/sa/imports/kim_import.owl#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<https://w3id.org/schulart/sa/imports/kim_import.owl>
+<https://w3id.org/schulart/sa/imports/kim_import.owl>
+Annotation(rdfs:comment "This file contains externally imported content from the KIM vocabularies for Schulfächer, Schulabschlüsse, and Schularten for import into the Lehrplan Ontology (LPO).")
+
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s02>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s03>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s04>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s05>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s06>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s07>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s08>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s09>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s10>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s11>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s12>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s13>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s14>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s15>))
+Declaration(NamedIndividual(<https://w3id.org/kim/schularten/s16>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#altLabel>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#narrowMatch>))
+Declaration(AnnotationProperty(<http://www.w3.org/2004/02/skos/core#prefLabel>))
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <https://w3id.org/kim/schularten/s02> (Grundschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s02> "Grundschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s02> <http://w3id.org/kim/educationalLevel/level_1>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s02> <https://w3id.org/kim/isced-1997/level1>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s02> <https://w3id.org/kim/isced-2011/level1>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s02> <http://w3id.org/openeduhub/vocabs/educationalLevel/1>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s02> <http://w3id.org/openeduhub/vocabs/educationalLevel/2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s02> <http://w3id.org/openeduhub/vocabs/educationalLevel/3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s02> <http://w3id.org/openeduhub/vocabs/educationalLevel/4>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s02> "Grundschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s03> (Hauptschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s03> "Hauptschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s03> "Mittelschule"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s03> "Mittelstufenschule"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/kim/educationalLevel/level_2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s03> <https://w3id.org/kim/isced-1997/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s03> <https://w3id.org/kim/isced-2011/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/10>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/5>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/6>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/7>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/8>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s03> <http://w3id.org/openeduhub/vocabs/educationalLevel/9>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s03> "Hauptschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s04> (Realschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s04> "Realschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/kim/educationalLevel/level_2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s04> <https://w3id.org/kim/isced-1997/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s04> <https://w3id.org/kim/isced-2011/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/10>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/5>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/6>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/7>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/8>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s04> <http://w3id.org/openeduhub/vocabs/educationalLevel/9>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s04> "Realschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s05> (Gesamtschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s05> "Gesamtschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/kim/educationalLevel/level_2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <https://w3id.org/kim/isced-1997/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <https://w3id.org/kim/isced-2011/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s05> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/10>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/11>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/12>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/13>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/5>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/6>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/7>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/8>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s05> <http://w3id.org/openeduhub/vocabs/educationalLevel/9>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s05> "Gesamtschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s06> (Förderschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s06> "Förderschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s06> "Förderschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s07> (Oberschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s07> "Oberschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s07> "Oberschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s08> (Gymnasium (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s08> "Gymnasium (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/kim/educationalLevel/level_2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <https://w3id.org/kim/isced-1997/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <https://w3id.org/kim/isced-2011/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s08> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/10>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/11>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/12>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/13>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/5>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/6>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/7>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/8>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s08> <http://w3id.org/openeduhub/vocabs/educationalLevel/9>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s08> "Gymnasium"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s09> (Gemeinschaftsschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s09> "Gemeinschaftsschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s09> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s09> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s09> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s09> "Gemeinschaftsschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s10> (Sekundarschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s10> "Sekundarschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/kim/educationalLevel/level_2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s10> <https://w3id.org/kim/isced-1997/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s10> <https://w3id.org/kim/isced-2011/level2>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/10>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/5>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/6>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/7>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/8>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#narrowMatch> <https://w3id.org/kim/schularten/s10> <http://w3id.org/openeduhub/vocabs/educationalLevel/9>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s10> "Sekundarschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s11> (Berufsfachschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s11> "Berufsfachschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s11> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s11> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s11> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s11> "Berufsfachschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s12> (Berufsschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s12> "Berufsschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s12> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s12> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s12> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s12> "Berufsschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s13> (Fachoberschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s13> "Fachoberschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s13> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s13> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s13> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s13> "Fachoberschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s14> (Berufliches Gymnasium (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s14> "Berufliches Gymnasium (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s14> "Fachgymnasium"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s14> <http://w3id.org/kim/educationalLevel/level_3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s14> <https://w3id.org/kim/isced-1997/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#closeMatch> <https://w3id.org/kim/schularten/s14> <https://w3id.org/kim/isced-2011/level3>)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s14> "Berufliches Gymnasium"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s15> (Privat- und Ersatzschule (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s15> "Privat- und Ersatzschule (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s15> "Ersatzschule"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s15> "Freie Schule"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s15> "Privatschule"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s15> "Privat- und Ersatzschule"@de)
+
+# Individual: <https://w3id.org/kim/schularten/s16> (Abendgymnasium (KIM-Schulart))
+
+AnnotationAssertion(rdfs:label <https://w3id.org/kim/schularten/s16> "Abendgymnasium (KIM-Schulart)")
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#altLabel> <https://w3id.org/kim/schularten/s16> "Kolleg"@de)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#prefLabel> <https://w3id.org/kim/schularten/s16> "Abendgymnasium"@de)
+
+
+)
