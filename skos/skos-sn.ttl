@@ -1,0 +1,66 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/schulart/SN_0000000>
+        a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/creator>
+                "Jörg Waitelonis" , "Laura Junghans" , "Cindy Bloes" , "Almut Steinlein" , "Steffen Roertgen" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/by/4.0/> ;
+        skos:prefLabel  "Schularten (Sachsen)" .
+
+<https://w3id.org/schulart/SN_0000005>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
+        skos:prefLabel     "Gymnasium" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
+
+<https://w3id.org/schulfach/SN_0000000>
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" .
+
+<https://w3id.org/schulart/SN_0000003>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s07> ;
+        skos:prefLabel     "Oberschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
+
+<http://purl.org/dc/terms/license>
+        skos:prefLabel  "license" .
+
+<https://w3id.org/schulart/sa.owl>
+        <http://purl.org/dc/terms/description>
+                "None" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/unspecified> ;
+        <http://purl.org/dc/terms/title>
+                "Schulart Ontology" .
+
+<https://w3id.org/schulart/SN_0000001>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
+        skos:prefLabel     "Grundschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
+
+<https://w3id.org/schulart/SN_0000006>
+        a                  skos:Concept ;
+        skos:prefLabel     "Klinik- und Krankenhausschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
+
+<http://purl.org/dc/terms/description>
+        skos:prefLabel  "description" .
+
+<https://w3id.org/schulart/SN_0000004>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s07> ;
+        skos:prefLabel     "Oberschule+" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
+
+<http://purl.org/dc/terms/title>
+        skos:prefLabel  "title" .
+
+<https://w3id.org/schulart/SN_0000002>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s09> ;
+        skos:prefLabel     "Gemeinschaftsschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .

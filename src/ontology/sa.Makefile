@@ -80,19 +80,19 @@ skos-%.ttl:
 
 
 
-CITATION="'German School Subjects Ontology. Version $(VERSION), https://w3id.org/schulart/'"
+CITATION="'Types of German Schools Ontology. Version $(VERSION), https://w3id.org/schulart/'"
 
 ALL_ANNOTATIONS=--annotate-defined-by false \
 	--ontology-iri https://w3id.org/schulfach/ -V https://w3id.org/schulart/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
-#	--link-annotation owl:priorVersion https://w3id.org/lehrplan/ontology/$(PRIOR_VERSION) \
+#	--link-annotation owl:priorVersion https://w3id.org/schulart/$(PRIOR_VERSION) \
 
 update-ontology-annotations: 
-	$(ROBOT) annotate --input ../../sf.owl $(ALL_ANNOTATIONS) --output ../../sf.owl && \
-	$(ROBOT) annotate --input ../../sf.ttl $(ALL_ANNOTATIONS) --output ../../sf.ttl && \
-	$(ROBOT) annotate --input ../../sf-full.owl $(ALL_ANNOTATIONS) --output ../../sf-full.owl && \
-	$(ROBOT) annotate --input ../../sf-full.ttl $(ALL_ANNOTATIONS) --output ../../sf-full.ttl 
+	$(ROBOT) annotate --input ../../sa.owl $(ALL_ANNOTATIONS) --output ../../sa.owl && \
+	$(ROBOT) annotate --input ../../sa.ttl $(ALL_ANNOTATIONS) --output ../../sa.ttl && \
+	$(ROBOT) annotate --input ../../sa-full.owl $(ALL_ANNOTATIONS) --output ../../sa-full.owl && \
+	$(ROBOT) annotate --input ../../sa-full.ttl $(ALL_ANNOTATIONS) --output ../../sa-full.ttl 
 
 
 

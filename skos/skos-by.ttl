@@ -1,0 +1,99 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+<http://purl.org/dc/terms/description>
+        skos:prefLabel  "description" .
+
+<https://w3id.org/schulart/BY_0000000>
+        a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/creator>
+                "Steffen Roertgen" , "Jörg Waitelonis" , "Almut Steinlein" , "Cindy Bloes" , "Laura Junghans" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/by/4.0/> ;
+        skos:prefLabel  "Schularten (Bayern)" .
+
+<https://w3id.org/schulart/BY_0000006>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s13> ;
+        skos:prefLabel     "Fachoberschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000005>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
+        skos:prefLabel     "Gymnasium" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulfach/BY_0000000>
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" .
+
+<https://w3id.org/schulart/sa.owl>
+        <http://purl.org/dc/terms/description>
+                "None" ;
+        <http://purl.org/dc/terms/license>
+                <https://creativecommons.org/licenses/unspecified> ;
+        <http://purl.org/dc/terms/title>
+                "Schulart Ontology" .
+
+<https://w3id.org/schulart/BY_0000004>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s04> ;
+        skos:prefLabel     "Realschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000003>
+        a                  skos:Concept ;
+        skos:prefLabel     "Wirtschaftsschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000009>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s12> ;
+        skos:prefLabel     "Berufsschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000012>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s06> ;
+        skos:prefLabel     "Förderschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<http://purl.org/dc/terms/license>
+        skos:prefLabel  "license" .
+
+<http://purl.org/dc/terms/title>
+        skos:prefLabel  "title" .
+
+<https://w3id.org/schulart/BY_0000002>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
+        skos:prefLabel     "Mittelschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000008>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s11> ;
+        skos:prefLabel     "Berufsfachschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000011>
+        a                  skos:Concept ;
+        skos:prefLabel     "Fachschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000001>
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
+        skos:prefLabel     "Grundschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000007>
+        a                  skos:Concept ;
+        skos:prefLabel     "Berufsoberschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
+
+<https://w3id.org/schulart/BY_0000010>
+        a                  skos:Concept ;
+        skos:prefLabel     "Fachakademie" ;
+        skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .

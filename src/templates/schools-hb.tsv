@@ -1,7 +1,7 @@
-URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
-https://w3id.org/schulart/HB_0000000	Schularten (Bremen)	skos:ConceptScheme		Bremen			
-https://w3id.org/schulart/HB_0000001	Grundschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Grundschule (KIM-Schulart)	Grundschulniveau (HB)	jg1,jg2,jg3,jg4
-https://w3id.org/schulart/HB_0000002	Werkschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen			jg5,jg6,jg7,jg8,jg9,jg10,jg11
-https://w3id.org/schulart/HB_0000003	Oberschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Oberschule (KIM-Schulart)	Oberschulniveau (HB),Grundlegendes Anforderungsniveau (HB),Erweitertes Anforderungsniveau (HB),Oberstufenniveau (HB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
-https://w3id.org/schulart/HB_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (HB),Oberstufenniveau (HB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+https://w3id.org/schulart/HB_0000000	Schularten (Bremen)	skos:ConceptScheme		Bremen				
+https://w3id.org/schulart/HB_0000001	Grundschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Grundschule (KIM-Schulart)	Grundschulniveau (HB)	jg1,jg2,jg3,jg4	
+https://w3id.org/schulart/HB_0000002	Werkschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen			jg5,jg6,jg7,jg8,jg9,jg10,jg11	
+https://w3id.org/schulart/HB_0000003	Oberschule	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Oberschule (KIM-Schulart)	Oberschulniveau (HB),Grundlegendes Anforderungsniveau (HB),Erweitertes Anforderungsniveau (HB),Oberstufenniveau (HB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
+https://w3id.org/schulart/HB_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Bremen)	Bremen	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (HB),Oberstufenniveau (HB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	

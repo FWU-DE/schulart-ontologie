@@ -1,7 +1,7 @@
-URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
-https://w3id.org/schulart/BB_0000000	Schularten (Brandenburg)	skos:ConceptScheme		Brandenburg			
-https://w3id.org/schulart/BB_0000001	Grundschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Grundschule (KIM-Schulart)	EBR A,EBR B,EBR C,EBR D,FOR A,FOR B,FOR C,FOR D,FOR-Q A,FOR-Q B,FOR-Q C,FOR-Q D	jg1,jg2,jg3,jg4,jg5,jg6
-https://w3id.org/schulart/BB_0000002	Oberschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Oberschule (KIM-Schulart)	EBR D,EBR E,EBR F,EBR G,FOR D,FOR E,FOR F,FOR G	jg5,jg6,jg7,jg8,jg9,jg10
-https://w3id.org/schulart/BB_0000003	Gesamtschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Gesamtschule (KIM-Schulart)	EBR D,EBR E,EBR F,EBR G,FOR D,FOR E,FOR F,FOR G,FOR-Q E,FOR-Q F,FOR-Q G,FOR-Q H,Oberstufenniveau (BB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
-https://w3id.org/schulart/BB_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Gymnasium (KIM-Schulart)	FOR-Q E,FOR-Q F,FOR-Q G,FOR-Q H,Oberstufenniveau (BB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+https://w3id.org/schulart/BB_0000000	Schularten (Brandenburg)	skos:ConceptScheme		Brandenburg				
+https://w3id.org/schulart/BB_0000001	Grundschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Grundschule (KIM-Schulart)	EBR A,EBR B,EBR C,EBR D,FOR A,FOR B,FOR C,FOR D,FOR-Q A,FOR-Q B,FOR-Q C,FOR-Q D	jg1,jg2,jg3,jg4,jg5,jg6	
+https://w3id.org/schulart/BB_0000002	Oberschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Oberschule (KIM-Schulart)	EBR D,EBR E,EBR F,EBR G,FOR D,FOR E,FOR F,FOR G	jg5,jg6,jg7,jg8,jg9,jg10	
+https://w3id.org/schulart/BB_0000003	Gesamtschule	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Gesamtschule (KIM-Schulart)	EBR D,EBR E,EBR F,EBR G,FOR D,FOR E,FOR F,FOR G,FOR-Q E,FOR-Q F,FOR-Q G,FOR-Q H,Oberstufenniveau (BB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
+https://w3id.org/schulart/BB_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Brandenburg)	Brandenburg	Gymnasium (KIM-Schulart)	FOR-Q E,FOR-Q F,FOR-Q G,FOR-Q H,Oberstufenniveau (BB)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
