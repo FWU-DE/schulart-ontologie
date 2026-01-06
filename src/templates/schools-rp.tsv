@@ -1,7 +1,7 @@
-URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch		
-https://w3id.org/schulart/RP_0000000	Schularten (Rheinland-Pfalz)	skos:ConceptScheme		Rheinland-Pfalz			
-https://w3id.org/schulart/RP_0000001	Grundschule	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Grundschule (KIM-Schulart)	Grundschulniveau (RP)	jg1,jg2,jg3,jg4
-https://w3id.org/schulart/RP_0000002	Integrierte Gesamtschule	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Gesamtschule (KIM-Schulart)	Grundlegendes Kompetenzniveau (RP),Mittleres Kompetenzniveau (RP),Erhöhtes Kompetenzniveau (RP),Niveau Sekundarstufe II (RP)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
-https://w3id.org/schulart/RP_0000003	Realschule plus	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Realschule (KIM-Schulart)	Grundlegendes Kompetenzniveau (RP),Mittleres Kompetenzniveau (RP),Erhöhtes Kompetenzniveau (RP)	jg5,jg6,jg7,jg8,jg9,jg10
-https://w3id.org/schulart/RP_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Gymnasium (KIM-Schulart)	Erhöhtes Kompetenzniveau (RP),Niveau Sekundarstufe II (RP)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13
+URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
+ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+https://w3id.org/schulart/RP_0000000	Schularten (Rheinland-Pfalz)	skos:ConceptScheme		Rheinland-Pfalz				
+https://w3id.org/schulart/RP_0000001	Grundschule	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Grundschule (KIM-Schulart)	Grundschulniveau (RP)	jg1,jg2,jg3,jg4	
+https://w3id.org/schulart/RP_0000002	Integrierte Gesamtschule	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Gesamtschule (KIM-Schulart)	Grundlegendes Kompetenzniveau (RP),Mittleres Kompetenzniveau (RP),Erhöhtes Kompetenzniveau (RP),Niveau Sekundarstufe II (RP)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
+https://w3id.org/schulart/RP_0000003	Realschule plus	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Realschule (KIM-Schulart)	Grundlegendes Kompetenzniveau (RP),Mittleres Kompetenzniveau (RP),Erhöhtes Kompetenzniveau (RP)	jg5,jg6,jg7,jg8,jg9,jg10	
+https://w3id.org/schulart/RP_0000004	Gymnasium	Schulart,skos:Concept	Schularten (Rheinland-Pfalz)	Rheinland-Pfalz	Gymnasium (KIM-Schulart)	Erhöhtes Kompetenzniveau (RP),Niveau Sekundarstufe II (RP)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	

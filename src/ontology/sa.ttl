@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/schulfach/> .
+@prefix : <https://w3id.org/schulart/sa.ttl#> .
 @prefix dce: <http://purl.org/dc/elements/1.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -9,36 +9,26 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix ontology: <https://w3id.org/lehrplan/ontology/> .
-@base <https://w3id.org/schulfach/> .
+@base <https://w3id.org/schulart/sa.ttl> .
 
-<https://w3id.org/schulfach/> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://w3id.org/schulart/0.0.1> ;
-                               dcterms:bibliographicCitation "Types of German Schools Ontology. Version 0.0.1, https://w3id.org/schulart/" ;
-                               dcterms:created "2026-01-06" ;
-                               dcterms:creator <https://orcid.org/0000-0001-6378-2618> ,
-                                               <https://orcid.org/0000-0001-7192-7143> ,
-                                               "Almut Steinlein" ,
-                                               "Cindy Bloes" ,
-                                               "Laura Junghanns" ;
-                               dcterms:description "Die Schulart Ontologie ist ein formales Modell zur Definition und Organisation der Schularten in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schularten und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de ,
-                                                   "German school type ontology"@en ,
-                                                   "The German school type ontology is a formal semantic model that defines and organizes the school types (Schularten) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school types and their relationships—allowing data interoperability across different educational datasets and systems."@en ;
-                               dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
-                               dcterms:title "Schulart Ontology" ;
-                               doap:repository <https://github.com/FWU-DE/schulart-ontologie> ;
-                               owl:versionInfo "2026-01-06" .
+<https://w3id.org/schulart/sa.ttl> rdf:type owl:Ontology ;
+                                    owl:versionIRI <https://w3id.org/schulart/sa/releases/2026-01-06/sa.ttl> ;
+                                    dcterms:creator <https://orcid.org/0000-0001-6378-2618> ,
+                                                    <https://orcid.org/0000-0001-7192-7143> ,
+                                                    "Almut Steinlein" ,
+                                                    "Cindy Bloes" ,
+                                                    "Laura Junghanns" ;
+                                    dcterms:description "Die Schulart Ontologie ist ein formales Modell zur Definition und Organisation der Schularten in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schularten und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de ,
+                                                        "German school type ontology"@en ,
+                                                        "The German school type ontology is a formal semantic model that defines and organizes the school types (Schularten) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school types and their relationships—allowing data interoperability across different educational datasets and systems."@en ;
+                                    dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
+                                    dcterms:title "Schulart Ontology" ;
+                                    doap:repository <https://github.com/FWU-DE/schulart-ontologie> ;
+                                    owl:versionInfo "2026-01-06" .
 
 #################################################################
 #    Annotation properties
 #################################################################
-
-###  http://purl.org/dc/terms/bibliographicCitation
-dcterms:bibliographicCitation rdf:type owl:AnnotationProperty .
-
-
-###  http://purl.org/dc/terms/created
-dcterms:created rdf:type owl:AnnotationProperty .
-
 
 ###  http://purl.org/dc/terms/creator
 dcterms:creator rdf:type owl:AnnotationProperty .

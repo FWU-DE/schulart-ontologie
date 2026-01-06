@@ -25,6 +25,9 @@
         skos:prefLabel     "Realschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/NW_0000000> .
 
+<https://orcid.org/0000-0001-7192-7143>
+        skos:prefLabel  "Jörg Waitelonis" .
+
 <http://purl.org/dc/terms/license>
         skos:prefLabel  "license" .
 
@@ -35,10 +38,14 @@
         skos:topConceptOf  <https://w3id.org/schulart/NW_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
+        <http://purl.org/dc/terms/creator>
+                "Almut Steinlein" , "Laura Junghanns" , "Cindy Bloes" ;
+        <http://purl.org/dc/terms/creator>
+                <https://orcid.org/0000-0001-6378-2618> , <https://orcid.org/0000-0001-7192-7143> ;
         <http://purl.org/dc/terms/description>
-                "None" ;
+                "Die Schulart Ontologie ist ein formales Modell zur Definition und Organisation der Schularten in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schularten und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de , "The German school type ontology is a formal semantic model that defines and organizes the school types (Schularten) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school types and their relationships—allowing data interoperability across different educational datasets and systems."@en , "German school type ontology"@en ;
         <http://purl.org/dc/terms/license>
-                <https://creativecommons.org/licenses/unspecified> ;
+                <https://creativecommons.org/licenses/by-sa/4.0/> ;
         <http://purl.org/dc/terms/title>
                 "Schulart Ontology" .
 
@@ -65,3 +72,6 @@
         skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
         skos:prefLabel     "Hauptschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/NW_0000000> .
+
+<https://orcid.org/0000-0001-6378-2618>
+        skos:prefLabel  "Steffen Rörtgen" .

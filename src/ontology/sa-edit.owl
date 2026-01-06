@@ -29,13 +29,23 @@ Import(<https://w3id.org/schulart/sa/components/schools-th.owl>)
 Import(<https://w3id.org/schulart/sa/imports/kim_import.owl>)
 Import(<https://w3id.org/schulart/sa/imports/lp_import.owl>)
 Import(<https://w3id.org/schulart/sa/imports/skos_import.owl>)
-Annotation(dcterms:description "None")
-Annotation(dcterms:license <https://creativecommons.org/licenses/unspecified>)
+Annotation(dcterms:creator <https://orcid.org/0000-0001-6378-2618>)
+Annotation(dcterms:creator <https://orcid.org/0000-0001-7192-7143>)
+Annotation(dcterms:creator "Almut Steinlein")
+Annotation(dcterms:creator "Cindy Bloes")
+Annotation(dcterms:creator "Laura Junghanns")
+Annotation(dcterms:description "Die Schulart Ontologie ist ein formales Modell zur Definition und Organisation der Schularten in den deutschen Bundesländern. Sie stellt ein strukturiertes Vokabular bereit, um Schularten und deren Beziehungen zu beschreiben, zu klassifizieren und zu verknüpfen – und ermöglicht dadurch die Interoperabilität von Bildungsdaten über verschiedene Systeme und Institutionen hinweg."@de)
+Annotation(dcterms:description "German school type ontology"@en)
+Annotation(dcterms:description "The German school type ontology is a formal semantic model that defines and organizes the school types (Schularten) used across the German federal states. It provides a structured vocabulary for describing, categorizing, and interlinking school types and their relationships—allowing data interoperability across different educational datasets and systems."@en)
+Annotation(dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/>)
 Annotation(dcterms:title "Schulart Ontology")
+Annotation(<http://usefulinc.com/ns/doap#repository> <https://github.com/FWU-DE/schulart-ontologie>)
 
+Declaration(AnnotationProperty(dcterms:creator))
 Declaration(AnnotationProperty(dcterms:description))
 Declaration(AnnotationProperty(dcterms:license))
 Declaration(AnnotationProperty(dcterms:title))
+Declaration(AnnotationProperty(<http://usefulinc.com/ns/doap#repository>))
 ############################
 #   Annotation Properties
 ############################
@@ -54,4 +64,6 @@ AnnotationAssertion(rdfs:label dcterms:title "title")
 
 
 
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-6378-2618> "Steffen Rörtgen")
+AnnotationAssertion(rdfs:label <https://orcid.org/0000-0001-7192-7143> "Jörg Waitelonis")
 )

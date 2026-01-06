@@ -10,7 +10,7 @@
 # More information: https://github.com/INCATools/ontology-development-kit/
 
 # Fingerprint of the configuration file when this Makefile was last generated
-CONFIG_HASH=                791ad9093d462b0cd5b94431472c2612d5d41e6ae44c169f13b30fa39cf0d3e3
+CONFIG_HASH=                08b81ddd454987fb17161bbfdd21d01d6680f28beaeb89c874cec3dbec3a3c6f
 
 
 # ----------------------------------------
@@ -661,7 +661,7 @@ ifeq ($(MIR),true)
 .PHONY: mirror-lp
 .PRECIOUS: $(MIRRORDIR)/lp.owl
 mirror-lp: | $(TMPDIR)
-	$(ROBOT) convert -I https://w3id.org/lehrplan/ontology -o $(TMPDIR)/$@.owl
+	$(ROBOT) convert -I https://fwu-de.github.io/lehrplan-ontologie/ontology.ttl -o $(TMPDIR)/$@.owl
 
 
 ## ONTOLOGY: kim
