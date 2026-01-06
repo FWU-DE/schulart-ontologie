@@ -2,7 +2,7 @@ URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstuf
 ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
 https://w3id.org/schulart/SL_0000000	Schularten (Saarland)	skos:ConceptScheme		Saarland				
 https://w3id.org/schulart/SL_0000001	Grundschule	Schulart,skos:Concept	Schularten (Saarland)	Saarland	Grundschule (KIM-Schulart)	Grundschulniveau (SL)	jg1,jg2,jg3,jg4	
-https://w3id.org/schulart/SL_0000002	Gemeinschaftsschule	Schulart,skos:Concept	Schularten (Saarland)	Saarland	Gemeinschaftsschule (KIM-Schulart)	A Kurs (SL),E Kurs (SL),G Kurs (SL),Oberstufenniveau (SL)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
+https://w3id.org/schulart/SL_0000002	Gemeinschaftsschule	Schulart,skos:Concept	Schularten (Saarland)	Saarland	Gemeinschaftsschule (KIM-Schulart)	Gemeinschaftsschulniveau (SL),A Kurs (SL),E Kurs (SL),G Kurs (SL),Oberstufenniveau (SL)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
 https://w3id.org/schulart/SL_0000003	Gymnasium	Schulart,skos:Concept	Schularten (Saarland)	Saarland	Gymnasium (KIM-Schulart)	Gymnasialniveau Sek I (SL),Oberstufenniveau (SL)	jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	
 https://w3id.org/schulart/SL_0000004	Deutsch-Luxemburgisches Schengen-Lyzeum	Schulart,skos:Concept	Schularten (Saarland)	Saarland			jg5,jg6,jg7,jg8,jg9,jg10	
 https://w3id.org/schulart/SL_0000005	Europäische Schule Saarland	Schulart,skos:Concept	Schularten (Saarland)	Saarland			jg1,jg2,jg3,jg4,jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13	

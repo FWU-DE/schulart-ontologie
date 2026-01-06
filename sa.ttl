@@ -78,9 +78,7 @@ skos:definition rdf:type owl:AnnotationProperty ;
 
 
 ###  http://www.w3.org/2004/02/skos/core#editorialNote
-skos:editorialNote rdf:type owl:AnnotationProperty ;
-                   rdfs:label "editorial note"@en ;
-                   skos:definition "A note for an editor, translator or maintainer of the vocabulary."@en .
+skos:editorialNote rdf:type owl:AnnotationProperty .
 
 
 ###  http://www.w3.org/2004/02/skos/core#example
@@ -2863,10 +2861,13 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s02> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0030365 ;
+                                       ontology:LP_0000026 ontology:LP_2000001 ,
+                                                           ontology:LP_2000002 ,
+                                                           ontology:LP_2000003 ,
+                                                           ontology:LP_2000004 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Grundschule" ;
-                                       skos:editorialNote "jg1,jg2,jg3,jg4" .
+                                       ontology:LP_0000833 ontology:LP_0030365 ;
+                                       rdfs:label "Grundschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000002
@@ -2875,10 +2876,15 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000091 ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Hauptschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10" .
+                                       ontology:LP_0000833 ontology:LP_0000091 ;
+                                       rdfs:label "Hauptschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000003
@@ -2887,25 +2893,35 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s03> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000091 ,
-                                                           ontology:LP_0000092 ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Mittelstufenschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10" .
+                                       ontology:LP_0000833 ontology:LP_0000091 ,
+                                                           ontology:LP_0000092 ;
+                                       rdfs:label "Mittelstufenschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000004
 <https://w3id.org/schulart/HE_0000004> rdf:type owl:NamedIndividual ,
                                                 skos:Concept ,
                                                 ontology:LP_0000111 ;
+                                       skos:closeMatch <https://w3id.org/kim/schularten/s03> ,
+                                                       <https://w3id.org/kim/schularten/s04> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000091 ,
-                                                           ontology:LP_0000092 ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       ontology:LP_0000833 <https://w3id.org/kim/schularten/s03> ,
-                                                           <https://w3id.org/kim/schularten/s04> ;
-                                       rdfs:label "Verbundene Haupt- und Realschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10" .
+                                       ontology:LP_0000833 ontology:LP_0000091 ,
+                                                           ontology:LP_0000092 ;
+                                       rdfs:label "Verbundene Haupt- und Realschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000005
@@ -2914,10 +2930,15 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s04> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000092 ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Realschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10" .
+                                       ontology:LP_0000833 ontology:LP_0000092 ;
+                                       rdfs:label "Realschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000006
@@ -2926,13 +2947,21 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000090 ,
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       ontology:LP_0000833 ontology:LP_0000090 ,
                                                            ontology:LP_0000091 ,
                                                            ontology:LP_0000092 ,
                                                            ontology:LP_0030348 ;
-                                       ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Integrierte Gesamtschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" .
+                                       rdfs:label "Integrierte Gesamtschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000007
@@ -2941,13 +2970,21 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s05> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000090 ,
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
+                                       ontology:LP_0000029 ontology:LP_3000050 ;
+                                       ontology:LP_0000833 ontology:LP_0000090 ,
                                                            ontology:LP_0000091 ,
                                                            ontology:LP_0000092 ,
                                                            ontology:LP_0030348 ;
-                                       ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Kooperative Gesamtschule" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" .
+                                       rdfs:label "Kooperative Gesamtschule" .
 
 
 ###  https://w3id.org/schulart/HE_0000008
@@ -2956,11 +2993,19 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                                 ontology:LP_0000111 ;
                                        skos:exactMatch <https://w3id.org/kim/schularten/s08> ;
                                        skos:topConceptOf <https://w3id.org/schulart/HE_0000000> ;
-                                       ontology:LP_0000026 ontology:LP_0000090 ,
-                                                           ontology:LP_0030348 ;
+                                       ontology:LP_0000026 ontology:LP_2000005 ,
+                                                           ontology:LP_2000006 ,
+                                                           ontology:LP_2000007 ,
+                                                           ontology:LP_2000008 ,
+                                                           ontology:LP_2000009 ,
+                                                           ontology:LP_2000010 ,
+                                                           ontology:LP_2000011 ,
+                                                           ontology:LP_2000012 ,
+                                                           ontology:LP_2000013 ;
                                        ontology:LP_0000029 ontology:LP_3000050 ;
-                                       rdfs:label "Gymnasium" ;
-                                       skos:editorialNote "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" .
+                                       ontology:LP_0000833 ontology:LP_0000090 ,
+                                                           ontology:LP_0030348 ;
+                                       rdfs:label "Gymnasium" .
 
 
 ###  https://w3id.org/schulart/HH_0000000
@@ -3593,6 +3638,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                        ontology:LP_0000833 ontology:LP_0000260 ,
                                                            ontology:LP_0000264 ,
                                                            ontology:LP_0000266 ,
+                                                           ontology:LP_0000267 ,
                                                            ontology:LP_0030355 ;
                                        rdfs:label "Gemeinschaftsschule" .
 

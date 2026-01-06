@@ -2,32 +2,28 @@
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
 
 <https://w3id.org/schulart/HE_0000003>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s03> ;
-        skos:prefLabel      "Mittelstufenschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
+        skos:prefLabel     "Mittelstufenschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulart/HE_0000008>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel      "Gymnasium" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
+        skos:prefLabel     "Gymnasium" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulart/HE_0000001>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg1,jg2,jg3,jg4" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel      "Grundschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
+        skos:prefLabel     "Grundschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulart/HE_0000006>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s05> ;
-        skos:prefLabel      "Integrierte Gesamtschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
+        skos:prefLabel     "Integrierte Gesamtschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
         skos:prefLabel  "Jörg Waitelonis" .
@@ -36,10 +32,10 @@
         skos:prefLabel  "license" .
 
 <https://w3id.org/schulart/HE_0000004>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10" ;
-        skos:prefLabel      "Verbundene Haupt- und Realschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:closeMatch    <https://w3id.org/kim/schularten/s04> , <https://w3id.org/kim/schularten/s03> ;
+        skos:prefLabel     "Verbundene Haupt- und Realschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
         <http://purl.org/dc/terms/creator>
@@ -57,18 +53,16 @@
         skos:prefLabel  "description" .
 
 <https://w3id.org/schulart/HE_0000002>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s03> ;
-        skos:prefLabel      "Hauptschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
+        skos:prefLabel     "Hauptschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulart/HE_0000007>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10,jg11,jg12,jg13" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s05> ;
-        skos:prefLabel      "Kooperative Gesamtschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
+        skos:prefLabel     "Kooperative Gesamtschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <http://purl.org/dc/terms/title>
         skos:prefLabel  "title" .
@@ -82,11 +76,10 @@
         skos:prefLabel  "Schularten (Hessen)" .
 
 <https://w3id.org/schulart/HE_0000005>
-        a                   skos:Concept ;
-        skos:editorialNote  "jg5,jg6,jg7,jg8,jg9,jg10" ;
-        skos:exactMatch     <https://w3id.org/kim/schularten/s04> ;
-        skos:prefLabel      "Realschule" ;
-        skos:topConceptOf   <https://w3id.org/schulart/HE_0000000> .
+        a                  skos:Concept ;
+        skos:exactMatch    <https://w3id.org/kim/schularten/s04> ;
+        skos:prefLabel     "Realschule" ;
+        skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
 
 <https://w3id.org/schulfach/HE_0000000>
         <http://purl.org/dc/terms/created>
