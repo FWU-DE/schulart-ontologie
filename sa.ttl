@@ -12,8 +12,8 @@
 @base <https://w3id.org/schulfach/> .
 
 <https://w3id.org/schulfach/> rdf:type owl:Ontology ;
-                               owl:versionIRI <https://w3id.org/schulart/0.0.1> ;
-                               dcterms:bibliographicCitation "Types of German Schools Ontology. Version 0.0.1, https://w3id.org/schulart/" ;
+                               owl:versionIRI <https://w3id.org/schulart/1.0.0> ;
+                               dcterms:bibliographicCitation "Types of German Schools Ontology. Version 1.0.0, https://w3id.org/schulart/" ;
                                dcterms:created "2026-01-06" ;
                                dcterms:creator <https://orcid.org/0000-0001-6378-2618> ,
                                                <https://orcid.org/0000-0001-7192-7143> ,
@@ -26,7 +26,7 @@
                                dcterms:license <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                dcterms:title "Schulart Ontology" ;
                                doap:repository <https://github.com/FWU-DE/schulart-ontologie> ;
-                               owl:versionInfo "2026-01-06" .
+                               owl:versionInfo "1.0.0" .
 
 #################################################################
 #    Annotation properties
@@ -85,10 +85,6 @@ skos:editorialNote rdf:type owl:AnnotationProperty .
 skos:example rdf:type owl:AnnotationProperty .
 
 
-###  http://www.w3.org/2004/02/skos/core#narrowMatch
-skos:narrowMatch rdf:type owl:AnnotationProperty .
-
-
 ###  http://www.w3.org/2004/02/skos/core#prefLabel
 skos:prefLabel rdf:type owl:AnnotationProperty .
 
@@ -120,6 +116,12 @@ skos:hasTopConcept rdf:type owl:ObjectProperty ;
                    rdfs:range skos:Concept ;
                    rdfs:label "has top concept"@en ;
                    skos:definition "Relates, by convention, a concept scheme to a concept which is topmost in the broader/narrower concept hierarchies for that scheme, providing an entry point to these hierarchies."@en .
+
+
+###  http://www.w3.org/2004/02/skos/core#narrowMatch
+skos:narrowMatch rdf:type owl:ObjectProperty ;
+                 rdfs:label "has narrower match"@en ;
+                 skos:definition "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en .
 
 
 ###  http://www.w3.org/2004/02/skos/core#topConceptOf
@@ -489,6 +491,58 @@ ontology:LP_0030380 rdf:type owl:Class ;
 <http://w3id.org/kim/educationalLevel/level_3> rdf:type owl:NamedIndividual .
 
 
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/1
+<http://w3id.org/openeduhub/vocabs/educationalLevel/1> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/10
+<http://w3id.org/openeduhub/vocabs/educationalLevel/10> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/11
+<http://w3id.org/openeduhub/vocabs/educationalLevel/11> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/12
+<http://w3id.org/openeduhub/vocabs/educationalLevel/12> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/13
+<http://w3id.org/openeduhub/vocabs/educationalLevel/13> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/2
+<http://w3id.org/openeduhub/vocabs/educationalLevel/2> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/3
+<http://w3id.org/openeduhub/vocabs/educationalLevel/3> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/4
+<http://w3id.org/openeduhub/vocabs/educationalLevel/4> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/5
+<http://w3id.org/openeduhub/vocabs/educationalLevel/5> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/6
+<http://w3id.org/openeduhub/vocabs/educationalLevel/6> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/7
+<http://w3id.org/openeduhub/vocabs/educationalLevel/7> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/8
+<http://w3id.org/openeduhub/vocabs/educationalLevel/8> rdf:type owl:NamedIndividual .
+
+
+###  http://w3id.org/openeduhub/vocabs/educationalLevel/9
+<http://w3id.org/openeduhub/vocabs/educationalLevel/9> rdf:type owl:NamedIndividual .
+
+
 ###  https://w3id.org/kim/isced-1997/level1
 <https://w3id.org/kim/isced-1997/level1> rdf:type owl:NamedIndividual .
 
@@ -523,11 +577,11 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                       skos:closeMatch <http://w3id.org/kim/educationalLevel/level_1> ,
                                                       <https://w3id.org/kim/isced-1997/level1> ,
                                                       <https://w3id.org/kim/isced-2011/level1> ;
-                                      rdfs:label "Grundschule (KIM-Schulart)" ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/1> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/2> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/3> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/4> ;
+                                      rdfs:label "Grundschule (KIM-Schulart)" ;
                                       skos:prefLabel "Grundschule"@de .
 
 
@@ -536,15 +590,15 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                       skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
                                                       <https://w3id.org/kim/isced-1997/level2> ,
                                                       <https://w3id.org/kim/isced-2011/level2> ;
-                                      rdfs:label "Hauptschule (KIM-Schulart)" ;
-                                      skos:altLabel "Mittelschule"@de ,
-                                                    "Mittelstufenschule"@de ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      rdfs:label "Hauptschule (KIM-Schulart)" ;
+                                      skos:altLabel "Mittelschule"@de ,
+                                                    "Mittelstufenschule"@de ;
                                       skos:prefLabel "Hauptschule"@de .
 
 
@@ -553,13 +607,13 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                       skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
                                                       <https://w3id.org/kim/isced-1997/level2> ,
                                                       <https://w3id.org/kim/isced-2011/level2> ;
-                                      rdfs:label "Realschule (KIM-Schulart)" ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      rdfs:label "Realschule (KIM-Schulart)" ;
                                       skos:prefLabel "Realschule"@de .
 
 
@@ -571,7 +625,6 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                                       <https://w3id.org/kim/isced-1997/level3> ,
                                                       <https://w3id.org/kim/isced-2011/level2> ,
                                                       <https://w3id.org/kim/isced-2011/level3> ;
-                                      rdfs:label "Gesamtschule (KIM-Schulart)" ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/11> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/12> ,
@@ -581,6 +634,7 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      rdfs:label "Gesamtschule (KIM-Schulart)" ;
                                       skos:prefLabel "Gesamtschule"@de .
 
 
@@ -604,7 +658,6 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                                       <https://w3id.org/kim/isced-1997/level3> ,
                                                       <https://w3id.org/kim/isced-2011/level2> ,
                                                       <https://w3id.org/kim/isced-2011/level3> ;
-                                      rdfs:label "Gymnasium (KIM-Schulart)" ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/11> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/12> ,
@@ -614,6 +667,7 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      rdfs:label "Gymnasium (KIM-Schulart)" ;
                                       skos:prefLabel "Gymnasium"@de .
 
 
@@ -631,13 +685,13 @@ ontology:LP_0030380 rdf:type owl:Class ;
                                       skos:closeMatch <http://w3id.org/kim/educationalLevel/level_2> ,
                                                       <https://w3id.org/kim/isced-1997/level2> ,
                                                       <https://w3id.org/kim/isced-2011/level2> ;
-                                      rdfs:label "Sekundarschule (KIM-Schulart)" ;
                                       skos:narrowMatch <http://w3id.org/openeduhub/vocabs/educationalLevel/10> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/5> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/6> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/7> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/8> ,
                                                        <http://w3id.org/openeduhub/vocabs/educationalLevel/9> ;
+                                      rdfs:label "Sekundarschule (KIM-Schulart)" ;
                                       skos:prefLabel "Sekundarschule"@de .
 
 

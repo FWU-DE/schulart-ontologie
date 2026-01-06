@@ -15,6 +15,7 @@ Declaration(Class(<http://www.w3.org/2004/02/skos/core#ConceptScheme>))
 Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#closeMatch>))
 Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#exactMatch>))
 Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#hasTopConcept>))
+Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#narrowMatch>))
 Declaration(ObjectProperty(<http://www.w3.org/2004/02/skos/core#topConceptOf>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/creator>))
 Declaration(AnnotationProperty(<http://purl.org/dc/terms/description>))
@@ -55,6 +56,11 @@ AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www
 InverseObjectProperties(<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/2004/02/skos/core#topConceptOf>)
 ObjectPropertyDomain(<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/2004/02/skos/core#ConceptScheme>)
 ObjectPropertyRange(<http://www.w3.org/2004/02/skos/core#hasTopConcept> <http://www.w3.org/2004/02/skos/core#Concept>)
+
+# Object Property: <http://www.w3.org/2004/02/skos/core#narrowMatch> (has narrower match)
+
+AnnotationAssertion(rdfs:label <http://www.w3.org/2004/02/skos/core#narrowMatch> "has narrower match"@en)
+AnnotationAssertion(<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/2004/02/skos/core#narrowMatch> "skos:narrowMatch is used to state a hierarchical mapping link between two conceptual resources in different concept schemes."@en)
 
 # Object Property: <http://www.w3.org/2004/02/skos/core#topConceptOf> (is top concept in scheme)
 
