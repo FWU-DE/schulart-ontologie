@@ -15,6 +15,8 @@
 
 <https://w3id.org/schulart/ST_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Cindy Bloes" , "Jörg Waitelonis" , "Almut Steinlein" , "Steffen Roertgen" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
@@ -26,10 +28,6 @@
 
 <http://purl.org/dc/terms/license>
         skos:prefLabel  "license" .
-
-<https://w3id.org/schulfach/ST_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulart/sa.owl>
         <http://purl.org/dc/terms/creator>

@@ -3,6 +3,8 @@
 
 <https://w3id.org/schulart/SN_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Laura Junghans" , "Cindy Bloes" , "Almut Steinlein" , "Steffen Roertgen" ;
         <http://purl.org/dc/terms/license>
@@ -14,10 +16,6 @@
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
         skos:prefLabel     "Gymnasium" ;
         skos:topConceptOf  <https://w3id.org/schulart/SN_0000000> .
-
-<https://w3id.org/schulfach/SN_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulart/SN_0000003>
         a                  skos:Concept ;

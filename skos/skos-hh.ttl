@@ -35,6 +35,8 @@
 
 <https://w3id.org/schulart/HH_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Steffen Roertgen" , "Laura Junghans" , "Almut Steinlein" , "Cindy Bloes" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -43,10 +45,6 @@
 
 <http://purl.org/dc/terms/title>
         skos:prefLabel  "title" .
-
-<https://w3id.org/schulfach/HH_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://w3id.org/schulart/HH_0000003>
         a                  skos:Concept ;

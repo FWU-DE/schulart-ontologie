@@ -75,7 +75,7 @@ $(IMPORTDIR)/kim_import.owl:
 
 skos-%.ttl: 
 	$(ROBOT) remove --input sa-edit.owl  --select imports --trim false merge --input components/schools-$*.owl --output $(TMPDIR)/schools-$*.ttl  
-	echo "<https://w3id.org/schulfach/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_0000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schools-$*.ttl 
+	echo "<https://w3id.org/schulart/$(shell echo $* | tr  '[:lower:]' '[:upper:]')_0000000> <http://purl.org/dc/terms/created> \"2025-10-21\" ."  >> $(TMPDIR)/schools-$*.ttl 
 	$(ROBOT) merge --input $(TMPDIR)/schools-$*.ttl query --update ../sparql/skos1.sparql query --query ../sparql/skos2.sparql $@
 
 
@@ -83,7 +83,7 @@ skos-%.ttl:
 CITATION="'Types of German Schools Ontology. Version $(VERSION), https://w3id.org/schulart/'"
 
 ALL_ANNOTATIONS=--annotate-defined-by false \
-	--ontology-iri https://w3id.org/schulfach/ -V https://w3id.org/schulart/$(VERSION) \
+	--ontology-iri https://w3id.org/schulart/ -V https://w3id.org/schulart/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
 #	--link-annotation owl:priorVersion https://w3id.org/schulart/$(PRIOR_VERSION) \

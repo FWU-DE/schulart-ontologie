@@ -9,6 +9,8 @@
 
 <https://w3id.org/schulart/TH_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Cindy Bloes" , "Almut Steinlein" , "Laura Junghans" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -20,10 +22,6 @@
         skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
         skos:prefLabel     "Integrierte Gesamtschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
-
-<https://w3id.org/schulfach/TH_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://orcid.org/0000-0001-7192-7143>
         skos:prefLabel  "Jörg Waitelonis" .

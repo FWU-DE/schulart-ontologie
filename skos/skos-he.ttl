@@ -69,6 +69,8 @@
 
 <https://w3id.org/schulart/HE_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Jörg Waitelonis" , "Steffen Roertgen" , "Cindy Bloes" , "Almut Steinlein" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
@@ -80,10 +82,6 @@
         skos:exactMatch    <https://w3id.org/kim/schularten/s04> ;
         skos:prefLabel     "Realschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/HE_0000000> .
-
-<https://w3id.org/schulfach/HE_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://orcid.org/0000-0001-6378-2618>
         skos:prefLabel  "Steffen Rörtgen" .

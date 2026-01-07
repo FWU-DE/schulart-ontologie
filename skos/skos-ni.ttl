@@ -63,8 +63,10 @@
 
 <https://w3id.org/schulart/NI_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
-                "Laura Junghans" , "Cindy Bloes" , "Steffen Roertgen" , "Almut Steinlein" , "Jörg Waitelonis" ;
+                "Laura Junghans" , "Steffen Roertgen" , "Cindy Bloes" , "Almut Steinlein" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
         skos:prefLabel  "Schularten (Niedersachsen)" .
@@ -74,10 +76,6 @@
         skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
         skos:prefLabel     "Kooperative Gesamtschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/NI_0000000> .
-
-<https://w3id.org/schulfach/NI_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <https://orcid.org/0000-0001-6378-2618>
         skos:prefLabel  "Steffen Rörtgen" .

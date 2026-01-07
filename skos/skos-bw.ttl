@@ -48,6 +48,8 @@
 
 <https://w3id.org/schulart/BW_0000000>
         a               skos:ConceptScheme ;
+        <http://purl.org/dc/terms/created>
+                "2025-10-21" ;
         <http://purl.org/dc/terms/creator>
                 "Almut Steinlein" , "Cindy Bloes" , "Laura Junghans" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
@@ -58,10 +60,6 @@
         a                  skos:Concept ;
         skos:prefLabel     "Werkrealschule" ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
-
-<https://w3id.org/schulfach/BW_0000000>
-        <http://purl.org/dc/terms/created>
-                "2025-10-21" .
 
 <http://purl.org/dc/terms/title>
         skos:prefLabel  "title" .
