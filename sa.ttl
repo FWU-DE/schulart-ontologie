@@ -14,7 +14,7 @@
 <https://w3id.org/schulart/> rdf:type owl:Ontology ;
                               owl:versionIRI <https://w3id.org/schulart/1.0.0> ;
                               dcterms:bibliographicCitation "Types of German Schools Ontology. Version 1.0.0, https://w3id.org/schulart/" ;
-                              dcterms:created "2026-01-06" ;
+                              dcterms:created "2026-01-26" ;
                               dcterms:creator <https://orcid.org/0000-0001-6378-2618> ,
                                               <https://orcid.org/0000-0001-7192-7143> ,
                                               "Almut Steinlein" ,
@@ -236,19 +236,19 @@ Bsp:
 
 :schuleTreburSchulform1 a Schulartfunktion .
 :schuleTreburSchulform1 bfo:existsAt :someTimeIntervalUntilDateX .
-:schuleTreburSchulform1 :konkretisiertSchulform :Realschule .
+:schuleTreburSchulform1 :wirdBeschriebenVon :Realschule .
 
 :schuleTreburSchulform2 a Schulartfunktion .
 :schuleTreburSchulform2 bfo:existsAt :someTimeIntervalUntilDateX .
-:schuleTreburSchulform2 :konkretisiertSchulform :Hauptschule .
+:schuleTreburSchulform2 :wirdBeschriebenVon :Hauptschule .
 
 :schuleTreburSchulform3 a Schulartfunktion .
-:schuleTreburSchulform3 :konkretisiertSchulform :Gesamtschule 
 :schuleTreburSchulform3 bfo:existsAt :someTimeIntervalFromDateY .
+:schuleTreburSchulform3 :wirdBeschriebenVon :Gesamtschule .
 
-:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform1 .
-:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform2 .
-:schuleTrebur :hatSchulformfunktion :schuleTreburSchulform3 .
+:schuleTrebur :hatFunktion :schuleTreburSchulform1 .
+:schuleTrebur :hatFunktion :schuleTreburSchulform2 .
+:schuleTrebur :hatFunktion :schuleTreburSchulform3 .
 
 :someTimeIntervalUntilDateX  bfo:precedes :someTimeIntervalUntilDateY .""" .
 
@@ -2273,7 +2273,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
 :BB_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000057 ;
-            rdfs:label "Schularten (Brandenburg)" .
+            rdfs:label "Schularten (Brandenburg)"@de .
 
 
 ###  https://w3id.org/schulart/BB_0000001
@@ -2301,7 +2301,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0030397 ,
                                 ontology:LP_0030398 ,
                                 ontology:LP_0030399 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/BB_0000002
@@ -2325,7 +2325,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0030400 ,
                                 ontology:LP_0030401 ,
                                 ontology:LP_0030402 ;
-            rdfs:label "Oberschule" .
+            rdfs:label "Oberschule"@de .
 
 
 ###  https://w3id.org/schulart/BB_0000003
@@ -2357,7 +2357,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0030401 ,
                                 ontology:LP_0030402 ,
                                 ontology:LP_0030403 ;
-            rdfs:label "Gesamtschule" .
+            rdfs:label "Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/BB_0000004
@@ -2381,14 +2381,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0030387 ,
                                 ontology:LP_0030388 ,
                                 ontology:LP_0030403 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/BE_0000000
 :BE_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000048 ;
-            rdfs:label "Schularten (Berlin)" .
+            rdfs:label "Schularten (Berlin)"@de .
 
 
 ###  https://w3id.org/schulart/BE_0000001
@@ -2422,7 +2422,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000610 ,
                                 ontology:LP_0000611 ,
                                 ontology:LP_0000612 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/BE_0000002
@@ -2474,7 +2474,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000614 ,
                                 ontology:LP_0000615 ,
                                 ontology:LP_0030377 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/BE_0000003
@@ -2510,7 +2510,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000614 ,
                                 ontology:LP_0000615 ,
                                 ontology:LP_0030377 ;
-            rdfs:label "Integrierte Sekundarschule" .
+            rdfs:label "Integrierte Sekundarschule"@de .
 
 
 ###  https://w3id.org/schulart/BE_0000004
@@ -2538,14 +2538,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000614 ,
                                 ontology:LP_0000615 ,
                                 ontology:LP_0030377 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000000
 :BW_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000049 ;
-            rdfs:label "Schularten (Baden-Württemberg)" .
+            rdfs:label "Schularten (Baden-Württemberg)"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000001
@@ -2560,7 +2560,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             ontology:LP_0000833 ontology:LP_0030362 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000002
@@ -2583,7 +2583,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000016 ,
                                 ontology:LP_0000022 ,
                                 ontology:LP_0030360 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000003
@@ -2600,7 +2600,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             ontology:LP_0000833 ontology:LP_0000022 ;
-            rdfs:label "Realschule" .
+            rdfs:label "Realschule"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000004
@@ -2617,7 +2617,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             ontology:LP_0000833 ontology:LP_0000016 ;
-            rdfs:label "Hauptschule" .
+            rdfs:label "Hauptschule"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000005
@@ -2634,7 +2634,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             ontology:LP_0000833 ontology:LP_0000016 ,
                                 ontology:LP_0000022 ;
-            rdfs:label "Werkrealschule" .
+            rdfs:label "Werkrealschule"@de .
 
 
 ###  https://w3id.org/schulart/BW_0000006
@@ -2655,14 +2655,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000049 ;
             ontology:LP_0000833 ontology:LP_0000018 ,
                                 ontology:LP_0030345 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000000
 :BY_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Schularten (Bayern)" .
+            rdfs:label "Schularten (Bayern)"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000001
@@ -2677,7 +2677,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             ontology:LP_0000833 ontology:LP_0030363 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000002
@@ -2696,7 +2696,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000025 ,
                                 ontology:LP_0000027 ,
                                 ontology:LP_0000031 ;
-            rdfs:label "Mittelschule" .
+            rdfs:label "Mittelschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000003
@@ -2712,7 +2712,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000011 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             ontology:LP_0000833 ontology:LP_0000030 ;
-            rdfs:label "Wirtschaftsschule" .
+            rdfs:label "Wirtschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000004
@@ -2729,7 +2729,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             ontology:LP_0000833 ontology:LP_0000030 ;
-            rdfs:label "Realschule" .
+            rdfs:label "Realschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000005
@@ -2750,7 +2750,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000051 ;
             ontology:LP_0000833 ontology:LP_0000023 ,
                                 ontology:LP_0030346 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000006
@@ -2760,7 +2760,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             skos:exactMatch <https://w3id.org/kim/schularten/s13> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Fachoberschule" .
+            rdfs:label "Fachoberschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000007
@@ -2769,7 +2769,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      ontology:LP_0000111 ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Berufsoberschule" .
+            rdfs:label "Berufsoberschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000008
@@ -2779,7 +2779,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             skos:exactMatch <https://w3id.org/kim/schularten/s11> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Berufsfachschule" .
+            rdfs:label "Berufsfachschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000009
@@ -2789,7 +2789,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             skos:exactMatch <https://w3id.org/kim/schularten/s12> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Berufsschule" .
+            rdfs:label "Berufsschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000010
@@ -2798,7 +2798,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      ontology:LP_0000111 ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Fachakademie" .
+            rdfs:label "Fachakademie"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000011
@@ -2807,7 +2807,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      ontology:LP_0000111 ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Fachschule" .
+            rdfs:label "Fachschule"@de .
 
 
 ###  https://w3id.org/schulart/BY_0000012
@@ -2817,14 +2817,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             skos:exactMatch <https://w3id.org/kim/schularten/s06> ;
             skos:topConceptOf :BY_0000000 ;
             ontology:LP_0000029 ontology:LP_3000051 ;
-            rdfs:label "Förderschule" .
+            rdfs:label "Förderschule"@de .
 
 
 ###  https://w3id.org/schulart/HB_0000000
 :HB_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000056 ;
-            rdfs:label "Schularten (Bremen)" .
+            rdfs:label "Schularten (Bremen)"@de .
 
 
 ###  https://w3id.org/schulart/HB_0000001
@@ -2839,7 +2839,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             ontology:LP_0000833 ontology:LP_0030364 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/HB_0000002
@@ -2855,7 +2855,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ,
                                 ontology:LP_2000011 ;
             ontology:LP_0000029 ontology:LP_3000056 ;
-            rdfs:label "Werkschule" .
+            rdfs:label "Werkschule"@de .
 
 
 ###  https://w3id.org/schulart/HB_0000003
@@ -2878,7 +2878,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000035 ,
                                 ontology:LP_0000044 ,
                                 ontology:LP_0030347 ;
-            rdfs:label "Oberschule" .
+            rdfs:label "Oberschule"@de .
 
 
 ###  https://w3id.org/schulart/HB_0000004
@@ -2899,14 +2899,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000056 ;
             ontology:LP_0000833 ontology:LP_0000038 ,
                                 ontology:LP_0030347 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000000
 :HE_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000050 ;
-            rdfs:label "Schularten (Hessen)" .
+            rdfs:label "Schularten (Hessen)"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000001
@@ -2921,7 +2921,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0030365 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000002
@@ -2938,7 +2938,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0000091 ;
-            rdfs:label "Hauptschule" .
+            rdfs:label "Hauptschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000003
@@ -2956,7 +2956,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0000091 ,
                                 ontology:LP_0000092 ;
-            rdfs:label "Mittelstufenschule" .
+            rdfs:label "Mittelstufenschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000004
@@ -2975,7 +2975,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0000091 ,
                                 ontology:LP_0000092 ;
-            rdfs:label "Verbundene Haupt- und Realschule" .
+            rdfs:label "Verbundene Haupt- und Realschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000005
@@ -2992,7 +2992,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0000092 ;
-            rdfs:label "Realschule" .
+            rdfs:label "Realschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000006
@@ -3015,7 +3015,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000091 ,
                                 ontology:LP_0000092 ,
                                 ontology:LP_0030348 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000007
@@ -3038,7 +3038,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000091 ,
                                 ontology:LP_0000092 ,
                                 ontology:LP_0030348 ;
-            rdfs:label "Kooperative Gesamtschule" .
+            rdfs:label "Kooperative Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/HE_0000008
@@ -3059,14 +3059,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000050 ;
             ontology:LP_0000833 ontology:LP_0000090 ,
                                 ontology:LP_0030348 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/HH_0000000
 :HH_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000045 ;
-            rdfs:label "Schularten (Hamburg)" .
+            rdfs:label "Schularten (Hamburg)"@de .
 
 
 ###  https://w3id.org/schulart/HH_0000001
@@ -3081,7 +3081,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             ontology:LP_0000833 ontology:LP_0030367 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/HH_0000002
@@ -3105,7 +3105,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000097 ,
                                 ontology:LP_0000098 ,
                                 ontology:LP_0030349 ;
-            rdfs:label "Stadtteilschule" .
+            rdfs:label "Stadtteilschule"@de .
 
 
 ###  https://w3id.org/schulart/HH_0000003
@@ -3126,14 +3126,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000045 ;
             ontology:LP_0000833 ontology:LP_0000094 ,
                                 ontology:LP_0030349 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000000
 :MV_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000052 ;
-            rdfs:label "Schularten (Mecklenburg-Vorpommern)" .
+            rdfs:label "Schularten (Mecklenburg-Vorpommern)"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000001
@@ -3148,7 +3148,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000052 ;
             ontology:LP_0000833 ontology:LP_0030368 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000002
@@ -3166,7 +3166,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000100 ,
                                 ontology:LP_0000101 ,
                                 ontology:LP_0000102 ;
-            rdfs:label "Regionale Schule" .
+            rdfs:label "Regionale Schule"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000003
@@ -3190,7 +3190,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000101 ,
                                 ontology:LP_0000102 ,
                                 ontology:LP_0030350 ;
-            rdfs:label "Kooperative Gesamtschule" .
+            rdfs:label "Kooperative Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000004
@@ -3214,7 +3214,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000101 ,
                                 ontology:LP_0000102 ,
                                 ontology:LP_0030350 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/MV_0000005
@@ -3236,14 +3236,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000099 ,
                                 ontology:LP_0000102 ,
                                 ontology:LP_0030350 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000000
 :NI_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000043 ;
-            rdfs:label "Schularten (Niedersachsen)" .
+            rdfs:label "Schularten (Niedersachsen)"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000001
@@ -3258,7 +3258,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             ontology:LP_0000833 ontology:LP_0030369 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000002
@@ -3276,7 +3276,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             ontology:LP_0000833 ontology:LP_0000108 ,
                                 ontology:LP_0000129 ;
-            rdfs:label "Hauptschule" .
+            rdfs:label "Hauptschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000003
@@ -3293,7 +3293,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             ontology:LP_0000833 ontology:LP_0000116 ;
-            rdfs:label "Realschule" .
+            rdfs:label "Realschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000004
@@ -3310,7 +3310,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             ontology:LP_0000833 ontology:LP_0000110 ;
-            rdfs:label "Oberschule" .
+            rdfs:label "Oberschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000005
@@ -3333,7 +3333,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000104 ,
                                 ontology:LP_0000117 ,
                                 ontology:LP_0000118 ;
-            rdfs:label "Kooperative Gesamtschule" .
+            rdfs:label "Kooperative Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000006
@@ -3356,7 +3356,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000104 ,
                                 ontology:LP_0000117 ,
                                 ontology:LP_0000118 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/NI_0000007
@@ -3377,14 +3377,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000043 ;
             ontology:LP_0000833 ontology:LP_0000107 ,
                                 ontology:LP_0030352 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000000
 :NW_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000044 ;
-            rdfs:label "Schularten (Nordrhein-Westfalen)" .
+            rdfs:label "Schularten (Nordrhein-Westfalen)"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000001
@@ -3399,7 +3399,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             ontology:LP_0000833 ontology:LP_0030370 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000002
@@ -3417,7 +3417,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             ontology:LP_0000833 ontology:LP_0000134 ,
                                 ontology:LP_0000138 ;
-            rdfs:label "Hauptschule" .
+            rdfs:label "Hauptschule"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000003
@@ -3434,7 +3434,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             ontology:LP_0000833 ontology:LP_0000142 ;
-            rdfs:label "Realschule" .
+            rdfs:label "Realschule"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000004
@@ -3452,7 +3452,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             ontology:LP_0000833 ontology:LP_0000130 ,
                                 ontology:LP_0000131 ;
-            rdfs:label "Sekundarschule" .
+            rdfs:label "Sekundarschule"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000005
@@ -3474,7 +3474,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000130 ,
                                 ontology:LP_0000131 ,
                                 ontology:LP_0030351 ;
-            rdfs:label "Gesamtschule" .
+            rdfs:label "Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/NW_0000006
@@ -3495,14 +3495,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000044 ;
             ontology:LP_0000833 ontology:LP_0000132 ,
                                 ontology:LP_0030351 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/RP_0000000
 :RP_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000046 ;
-            rdfs:label "Schularten (Rheinland-Pfalz)" .
+            rdfs:label "Schularten (Rheinland-Pfalz)"@de .
 
 
 ###  https://w3id.org/schulart/RP_0000001
@@ -3517,7 +3517,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             ontology:LP_0000833 ontology:LP_0030371 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/RP_0000002
@@ -3540,7 +3540,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000147 ,
                                 ontology:LP_0000151 ,
                                 ontology:LP_0030353 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/RP_0000003
@@ -3559,7 +3559,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000143 ,
                                 ontology:LP_0000147 ,
                                 ontology:LP_0000151 ;
-            rdfs:label "Realschule plus" .
+            rdfs:label "Realschule plus"@de .
 
 
 ###  https://w3id.org/schulart/RP_0000004
@@ -3580,14 +3580,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000046 ;
             ontology:LP_0000833 ontology:LP_0000143 ,
                                 ontology:LP_0030353 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/SH_0000000
 :SH_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000054 ;
-            rdfs:label "Schularten (Schleswig-Holstein)" .
+            rdfs:label "Schularten (Schleswig-Holstein)"@de .
 
 
 ###  https://w3id.org/schulart/SH_0000001
@@ -3602,7 +3602,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000054 ;
             ontology:LP_0000833 ontology:LP_0030372 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/SH_0000002
@@ -3626,7 +3626,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000236 ,
                                 ontology:LP_0000249 ,
                                 ontology:LP_0030354 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/SH_0000003
@@ -3648,14 +3648,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000236 ,
                                 ontology:LP_0000249 ,
                                 ontology:LP_0030354 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000000
 :SL_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000055 ;
-            rdfs:label "Schularten (Saarland)" .
+            rdfs:label "Schularten (Saarland)"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000001
@@ -3670,7 +3670,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             ontology:LP_0000833 ontology:LP_0030373 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000002
@@ -3694,7 +3694,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000266 ,
                                 ontology:LP_0000267 ,
                                 ontology:LP_0030355 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000003
@@ -3715,7 +3715,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000055 ;
             ontology:LP_0000833 ontology:LP_0000269 ,
                                 ontology:LP_0030355 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000004
@@ -3730,7 +3730,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000009 ,
                                 ontology:LP_2000010 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
-            rdfs:label "Deutsch-Luxemburgisches Schengen-Lyzeum" .
+            rdfs:label "Deutsch-Luxemburgisches Schengen-Lyzeum"@de .
 
 
 ###  https://w3id.org/schulart/SL_0000005
@@ -3752,14 +3752,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000012 ,
                                 ontology:LP_2000013 ;
             ontology:LP_0000029 ontology:LP_3000055 ;
-            rdfs:label "Europäische Schule Saarland" .
+            rdfs:label "Europäische Schule Saarland"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000000
 :SN_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000047 ;
-            rdfs:label "Schularten (Sachsen)" .
+            rdfs:label "Schularten (Sachsen)"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000001
@@ -3774,7 +3774,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             ontology:LP_0000833 ontology:LP_0030374 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000002
@@ -3803,7 +3803,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000295 ,
                                 ontology:LP_0030356 ,
                                 ontology:LP_0030374 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000003
@@ -3822,7 +3822,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000293 ,
                                 ontology:LP_0000294 ,
                                 ontology:LP_0000295 ;
-            rdfs:label "Oberschule" .
+            rdfs:label "Oberschule"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000004
@@ -3846,7 +3846,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000294 ,
                                 ontology:LP_0000295 ,
                                 ontology:LP_0030374 ;
-            rdfs:label "Oberschule+" .
+            rdfs:label "Oberschule+"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000005
@@ -3867,7 +3867,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000047 ;
             ontology:LP_0000833 ontology:LP_0000279 ,
                                 ontology:LP_0030356 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/SN_0000006
@@ -3876,14 +3876,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                      ontology:LP_0000111 ;
             skos:topConceptOf :SN_0000000 ;
             ontology:LP_0000029 ontology:LP_3000047 ;
-            rdfs:label "Klinik- und Krankenhausschule" .
+            rdfs:label "Klinik- und Krankenhausschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000000
 :ST_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000053 ;
-            rdfs:label "Schularten (Sachsen-Anhalt)" .
+            rdfs:label "Schularten (Sachsen-Anhalt)"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000001
@@ -3898,7 +3898,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             ontology:LP_0000833 ontology:LP_0030375 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000002
@@ -3917,7 +3917,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000297 ,
                                 ontology:LP_0000298 ,
                                 ontology:LP_0000299 ;
-            rdfs:label "Sekundarschule" .
+            rdfs:label "Sekundarschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000003
@@ -3941,7 +3941,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000298 ,
                                 ontology:LP_0000299 ,
                                 ontology:LP_0030357 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000004
@@ -3965,7 +3965,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000298 ,
                                 ontology:LP_0000299 ,
                                 ontology:LP_0030357 ;
-            rdfs:label "Kooperative Gesamtschule" .
+            rdfs:label "Kooperative Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000005
@@ -3989,7 +3989,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000298 ,
                                 ontology:LP_0000299 ,
                                 ontology:LP_0030357 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/ST_0000006
@@ -4010,14 +4010,14 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000053 ;
             ontology:LP_0000833 ontology:LP_0000296 ,
                                 ontology:LP_0030357 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000000
 :TH_0000000 rdf:type owl:NamedIndividual ,
                      skos:ConceptScheme ;
             ontology:LP_0000029 ontology:LP_3000031 ;
-            rdfs:label "Schularten (Thüringen)" .
+            rdfs:label "Schularten (Thüringen)"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000001
@@ -4032,7 +4032,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_2000004 ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             ontology:LP_0000833 ontology:LP_0030376 ;
-            rdfs:label "Grundschule" .
+            rdfs:label "Grundschule"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000002
@@ -4061,7 +4061,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0030358 ,
                                 ontology:LP_0030359 ,
                                 ontology:LP_0030376 ;
-            rdfs:label "Gemeinschaftsschule" .
+            rdfs:label "Gemeinschaftsschule"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000003
@@ -4079,7 +4079,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000833 ontology:LP_0000309 ,
                                 ontology:LP_0000310 ,
                                 ontology:LP_0000311 ;
-            rdfs:label "Regelschule" .
+            rdfs:label "Regelschule"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000004
@@ -4103,7 +4103,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000311 ,
                                 ontology:LP_0030358 ,
                                 ontology:LP_0030359 ;
-            rdfs:label "Kooperative Gesamtschule" .
+            rdfs:label "Kooperative Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000005
@@ -4127,7 +4127,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
                                 ontology:LP_0000311 ,
                                 ontology:LP_0030358 ,
                                 ontology:LP_0030359 ;
-            rdfs:label "Integrierte Gesamtschule" .
+            rdfs:label "Integrierte Gesamtschule"@de .
 
 
 ###  https://w3id.org/schulart/TH_0000006
@@ -4148,7 +4148,7 @@ ontology:LP_3000057 rdf:type owl:NamedIndividual ;
             ontology:LP_0000029 ontology:LP_3000031 ;
             ontology:LP_0000833 ontology:LP_0030358 ,
                                 ontology:LP_0030359 ;
-            rdfs:label "Gymnasium" .
+            rdfs:label "Gymnasium"@de .
 
 
 #################################################################

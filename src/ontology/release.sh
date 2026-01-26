@@ -1,6 +1,6 @@
 
 
-VERSION=1.0.0
+VERSION=1.0.1
 PRIOR_VERSION=1.0.0
 ONTBASE=https://w3id.org/schulart
 ANNOTATE_ONTOLOGY_VERSION="annotate -V $ONTBASE/$VERSION/\$@ --annotation owl:versionInfo $VERSION"
