@@ -39,12 +39,12 @@ jobs:
 
     - uses: actions/checkout@v3
       with:
-        ref: v1.0.0
-        path: v1.0.0
+        ref: 1.0.0
+        path: 1.0.0
     - name: Build HTML for 1.0.0
       run: |
            mkdir public/1.0.0
-           java -jar widoco.jar -ontFile v1.0.0/sa.ttl -outFolder public/1.0.0  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
+           java -jar widoco.jar -ontFile 1.0.0/sa.ttl -outFolder public/1.0.0  -uniteSections -includeAnnotationProperties -lang en-de  -getOntologyMetadata -noPlaceHolderText -rewriteAll -webVowl
            ls public/1.0.0/
            mv public/1.0.0/doc/* public/1.0.0/
            cp public/1.0.0/index-en.html public/1.0.0/index.html
