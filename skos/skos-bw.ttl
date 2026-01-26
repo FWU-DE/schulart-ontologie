@@ -4,19 +4,19 @@
 <https://w3id.org/schulart/BW_0000001>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel     "Grundschule" ;
+        skos:prefLabel     "Grundschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <https://w3id.org/schulart/BW_0000006>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel     "Gymnasium" ;
+        skos:prefLabel     "Gymnasium"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <https://w3id.org/schulart/BW_0000004>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
-        skos:prefLabel     "Hauptschule" ;
+        skos:prefLabel     "Hauptschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -28,7 +28,7 @@
 <https://w3id.org/schulart/BW_0000002>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s09> ;
-        skos:prefLabel     "Gemeinschaftsschule" ;
+        skos:prefLabel     "Gemeinschaftsschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
@@ -54,11 +54,11 @@
                 "Almut Steinlein" , "Cindy Bloes" , "Laura Junghans" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schularten (Baden-Württemberg)" .
+        skos:prefLabel  "Schularten (Baden-Württemberg)"@de .
 
 <https://w3id.org/schulart/BW_0000005>
         a                  skos:Concept ;
-        skos:prefLabel     "Werkrealschule" ;
+        skos:prefLabel     "Werkrealschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <http://purl.org/dc/terms/title>
@@ -67,7 +67,7 @@
 <https://w3id.org/schulart/BW_0000003>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s04> ;
-        skos:prefLabel     "Realschule" ;
+        skos:prefLabel     "Realschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BW_0000000> .
 
 <https://orcid.org/0000-0001-6378-2618>

@@ -4,7 +4,7 @@
 <https://w3id.org/schulart/TH_0000002>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s09> ;
-        skos:prefLabel     "Gemeinschaftsschule" ;
+        skos:prefLabel     "Gemeinschaftsschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <https://w3id.org/schulart/TH_0000000>
@@ -15,12 +15,12 @@
                 "Cindy Bloes" , "Almut Steinlein" , "Laura Junghans" , "Steffen Roertgen" , "Jörg Waitelonis" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schularten (Thüringen)" .
+        skos:prefLabel  "Schularten (Thüringen)"@de .
 
 <https://w3id.org/schulart/TH_0000005>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
-        skos:prefLabel     "Integrierte Gesamtschule" ;
+        skos:prefLabel     "Integrierte Gesamtschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -31,7 +31,7 @@
 
 <https://w3id.org/schulart/TH_0000003>
         a                  skos:Concept ;
-        skos:prefLabel     "Regelschule" ;
+        skos:prefLabel     "Regelschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
@@ -52,13 +52,13 @@
 <https://w3id.org/schulart/TH_0000001>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel     "Grundschule" ;
+        skos:prefLabel     "Grundschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <https://w3id.org/schulart/TH_0000006>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel     "Gymnasium" ;
+        skos:prefLabel     "Gymnasium"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <http://purl.org/dc/terms/title>
@@ -67,7 +67,7 @@
 <https://w3id.org/schulart/TH_0000004>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s05> ;
-        skos:prefLabel     "Kooperative Gesamtschule" ;
+        skos:prefLabel     "Kooperative Gesamtschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/TH_0000000> .
 
 <https://orcid.org/0000-0001-6378-2618>

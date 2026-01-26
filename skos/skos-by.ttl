@@ -12,18 +12,18 @@
                 "Steffen Roertgen" , "Jörg Waitelonis" , "Almut Steinlein" , "Cindy Bloes" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schularten (Bayern)" .
+        skos:prefLabel  "Schularten (Bayern)"@de .
 
 <https://w3id.org/schulart/BY_0000006>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s13> ;
-        skos:prefLabel     "Fachoberschule" ;
+        skos:prefLabel     "Fachoberschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000005>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel     "Gymnasium" ;
+        skos:prefLabel     "Gymnasium"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
@@ -44,24 +44,24 @@
 <https://w3id.org/schulart/BY_0000004>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s04> ;
-        skos:prefLabel     "Realschule" ;
+        skos:prefLabel     "Realschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000003>
         a                  skos:Concept ;
-        skos:prefLabel     "Wirtschaftsschule" ;
+        skos:prefLabel     "Wirtschaftsschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000009>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s12> ;
-        skos:prefLabel     "Berufsschule" ;
+        skos:prefLabel     "Berufsschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000012>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s06> ;
-        skos:prefLabel     "Förderschule" ;
+        skos:prefLabel     "Förderschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <http://purl.org/dc/terms/license>
@@ -73,18 +73,18 @@
 <https://w3id.org/schulart/BY_0000002>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s03> ;
-        skos:prefLabel     "Mittelschule" ;
+        skos:prefLabel     "Mittelschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000008>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s11> ;
-        skos:prefLabel     "Berufsfachschule" ;
+        skos:prefLabel     "Berufsfachschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000011>
         a                  skos:Concept ;
-        skos:prefLabel     "Fachschule" ;
+        skos:prefLabel     "Fachschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -93,15 +93,15 @@
 <https://w3id.org/schulart/BY_0000001>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel     "Grundschule" ;
+        skos:prefLabel     "Grundschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000007>
         a                  skos:Concept ;
-        skos:prefLabel     "Berufsoberschule" ;
+        skos:prefLabel     "Berufsoberschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .
 
 <https://w3id.org/schulart/BY_0000010>
         a                  skos:Concept ;
-        skos:prefLabel     "Fachakademie" ;
+        skos:prefLabel     "Fachakademie"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/BY_0000000> .

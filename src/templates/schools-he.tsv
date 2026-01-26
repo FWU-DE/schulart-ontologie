@@ -1,5 +1,5 @@
 URI	SCHULART	Type	Top Konzept	Bundesland	 exact match	close match	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I skos:closeMatch SPLIT=,	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
 https://w3id.org/schulart/HE_0000000	Schularten (Hessen)	skos:ConceptScheme		Hessen					
 https://w3id.org/schulart/HE_0000001	Grundschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Grundschule (KIM-Schulart)		Grundschulniveau (HE)	jg1,jg2,jg3,jg4	
 https://w3id.org/schulart/HE_0000002	Hauptschule	Schulart,skos:Concept	Schularten (Hessen)	Hessen	Hauptschule (KIM-Schulart)		Hauptschulniveau (HE)	jg5,jg6,jg7,jg8,jg9,jg10	

@@ -16,6 +16,7 @@ $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt
 $(IMPORTDIR)/lp_import.owl: $(MIRRORDIR)/lp.owl $(IMPORTDIR)/lp_terms.txt 
 	$(ROBOT) annotate --input $< --remove-annotations \
 		 filter --term-file $(IMPORTDIR)/lp_terms.txt --select "annotations self descendants instances" \
+		 remove --term https://w3id.org/lehrplan/ontology/LP_0000111 --select "instances" \
 		 $(ANNOTATE_CONVERT_FILE)
 
 
@@ -86,7 +87,7 @@ ALL_ANNOTATIONS=--annotate-defined-by false \
 	--ontology-iri https://w3id.org/schulart/ -V https://w3id.org/schulart/$(VERSION) \
 	--annotation http://purl.org/dc/terms/created "$(TODAY)" \
 	--annotation http://purl.org/dc/terms/bibliographicCitation "$(CITATION)"  \
-#	--link-annotation owl:priorVersion https://w3id.org/schulart/$(PRIOR_VERSION) \
+	--link-annotation owl:priorVersion https://w3id.org/schulart/$(PRIOR_VERSION) \
 
 update-ontology-annotations: 
 	$(ROBOT) annotate --input ../../sa.owl $(ALL_ANNOTATIONS) --output ../../sa.owl && \

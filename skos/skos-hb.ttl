@@ -4,13 +4,13 @@
 <https://w3id.org/schulart/HB_0000003>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s07> ;
-        skos:prefLabel     "Oberschule" ;
+        skos:prefLabel     "Oberschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/HB_0000000> .
 
 <https://w3id.org/schulart/HB_0000001>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel     "Grundschule" ;
+        skos:prefLabel     "Grundschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/HB_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -37,12 +37,12 @@
 <https://w3id.org/schulart/HB_0000004>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel     "Gymnasium" ;
+        skos:prefLabel     "Gymnasium"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/HB_0000000> .
 
 <https://w3id.org/schulart/HB_0000002>
         a                  skos:Concept ;
-        skos:prefLabel     "Werkschule" ;
+        skos:prefLabel     "Werkschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/HB_0000000> .
 
 <http://purl.org/dc/terms/title>
@@ -56,7 +56,7 @@
                 "Steffen Roertgen" , "Jörg Waitelonis" , "Almut Steinlein" , "Laura Junghans" , "Cindy Bloes" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schularten (Bremen)" .
+        skos:prefLabel  "Schularten (Bremen)"@de .
 
 <https://orcid.org/0000-0001-6378-2618>
         skos:prefLabel  "Steffen Rörtgen" .

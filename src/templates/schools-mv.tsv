@@ -1,5 +1,5 @@
 URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
 https://w3id.org/schulart/MV_0000000	Schularten (Mecklenburg-Vorpommern)	skos:ConceptScheme		Mecklenburg-Vorpommern				
 https://w3id.org/schulart/MV_0000001	Grundschule	Schulart,skos:Concept	Schularten (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern	Grundschule (KIM-Schulart)	Grundschulniveau (MV)	jg1,jg2,jg3,jg4	
 https://w3id.org/schulart/MV_0000002	Regionale Schule	Schulart,skos:Concept	Schularten (Mecklenburg-Vorpommern)	Mecklenburg-Vorpommern		Orientierungsstufeniveau (MV),Bildungsgangniveau Berufsreife (MV),Bildungsgangniveau Mittlere Reife (MV)	jg5,jg6,jg7,jg8,jg9,jg10	

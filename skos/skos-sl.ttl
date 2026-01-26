@@ -4,7 +4,7 @@
 <https://w3id.org/schulart/SL_0000002>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s09> ;
-        skos:prefLabel     "Gemeinschaftsschule" ;
+        skos:prefLabel     "Gemeinschaftsschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/SL_0000000> .
 
 <https://orcid.org/0000-0001-7192-7143>
@@ -21,11 +21,11 @@
                 "Cindy Bloes" , "Steffen Roertgen" , "Jörg Waitelonis" , "Almut Steinlein" , "Laura Junghans" ;
         <http://purl.org/dc/terms/license>
                 <https://creativecommons.org/licenses/by/4.0/> ;
-        skos:prefLabel  "Schularten (Saarland)" .
+        skos:prefLabel  "Schularten (Saarland)"@de .
 
 <https://w3id.org/schulart/SL_0000005>
         a                  skos:Concept ;
-        skos:prefLabel     "Europäische Schule Saarland" ;
+        skos:prefLabel     "Europäische Schule Saarland"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/SL_0000000> .
 
 <https://w3id.org/schulart/sa.owl>
@@ -46,7 +46,7 @@
 <https://w3id.org/schulart/SL_0000003>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s08> ;
-        skos:prefLabel     "Gymnasium" ;
+        skos:prefLabel     "Gymnasium"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/SL_0000000> .
 
 <http://purl.org/dc/terms/title>
@@ -55,7 +55,7 @@
 <https://w3id.org/schulart/SL_0000001>
         a                  skos:Concept ;
         skos:exactMatch    <https://w3id.org/kim/schularten/s02> ;
-        skos:prefLabel     "Grundschule" ;
+        skos:prefLabel     "Grundschule"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/SL_0000000> .
 
 <https://orcid.org/0000-0001-6378-2618>
@@ -63,5 +63,5 @@
 
 <https://w3id.org/schulart/SL_0000004>
         a                  skos:Concept ;
-        skos:prefLabel     "Deutsch-Luxemburgisches Schengen-Lyzeum" ;
+        skos:prefLabel     "Deutsch-Luxemburgisches Schengen-Lyzeum"@de ;
         skos:topConceptOf  <https://w3id.org/schulart/SL_0000000> .

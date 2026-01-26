@@ -1,5 +1,5 @@
 URI	SCHULART	Type	Top Konzept	Bundesland	 exact	Bildungsgangniveau	Jahrgangsstufen/Schulstufen	NOTIZEN
-ID	LABEL	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
+ID	AL rdfs:label@de	TYPE SPLIT=,	I skos:topConceptOf	I von Bundesland	I skos:exactMatch	I hat Bildungsgangniveau SPLIT=,	I hat Jahrgangsstufe SPLIT=,	A skos:editorialNote
 https://w3id.org/schulart/BY_0000000	Schularten (Bayern)	skos:ConceptScheme		Bayern				
 https://w3id.org/schulart/BY_0000001	Grundschule	Schulart,skos:Concept	Schularten (Bayern)	Bayern	Grundschule (KIM-Schulart)	Grundschulniveau (BY)	jg1,jg2,jg3,jg4	
 https://w3id.org/schulart/BY_0000002	Mittelschule	Schulart,skos:Concept	Schularten (Bayern)	Bayern	Hauptschule (KIM-Schulart)	Mittelschulniveau (BY),Mittlere-Reife-Klasse (BY),Regelklasse (BY)	jg5,jg6,jg7,jg8,jg9,jg10	
